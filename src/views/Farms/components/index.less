@@ -1,0 +1,226 @@
+.nav-tabs {
+  border-bottom: none !important;
+  display: flex;
+  width: fit-content;
+  margin-left: calc(50% - 80px);
+  height: 40px;
+  border-radius: 22px;
+  background-color: #2E2E2E !important;
+  margin-top: 20px;
+  & > .nav-item {
+    color: #FDD284;
+    font-size: 14px;
+    font-family: poppins_bold;
+    border: none !important;
+    text-align: center;
+    border-radius: 22px !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0px 22px !important;
+  }
+
+  & > .nav-item.active {
+    background-color: #FDD284 !important;
+    color: white !important;
+  }
+}
+
+.bsc-farm-item-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #1A1E27;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  padding: 15px;
+  & > div {
+    justify-content: center;
+    align-items: center;
+  }
+  .bsc-farm-item-header-left {
+    display: flex;
+    & > svg:nth-child(1) {
+      margin-right: 5px;
+    }
+  }
+  .bsc-farm-item-header-center {
+    display: flex;
+    & > span {
+      color: #EFEBE5;
+      font-family: poppins_semibold;
+      font-size: 20px;
+    }
+  }
+  .bsc-farm-item-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    & > span:nth-child(2) {
+      color: #FDD284;
+      border: 1.5px solid #FDD284;
+      border-radius: 8px;
+      height: 23px;
+      font-size: 10px;
+      font-family: poppins_medium;
+      padding-left: 5px;
+      padding-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > svg {
+        margin-right: 5px;
+      }
+    }
+
+    & > span:nth-child(1) {
+      color: #FAAC20;
+      background-color: rgba(#E7A021, 0.13);
+      border-radius: 8px;
+      height: 22px;
+      width: fit-content;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.bsc-farm-item-content {
+  padding: 15px;
+  & > div {
+    margin-top: 10px;
+  }
+  span {
+    font-size: 20px;
+  }
+  .bsc-farm-item-content-top {
+    & > div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      & > span:nth-child(1) {
+        color: #FFFFFF;
+      }
+      & > span:nth-child(2) {
+        color: #FDD284;
+        font-family: poppins_semibold;
+      }
+    }
+
+    & > div:nth-child(2) {
+      margin-top: 10px;  
+    }
+  }
+  .bsc-farm-item-content-mid,
+  .bsc-farm-item-content-bottom {
+    & >span {
+      display: flex;
+      width: 100%;
+      color: #FDD284;
+      align-items: center;
+      span {
+        color: white;
+        margin-left: 5px;
+      }
+    }
+
+    & > div {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      & > .bsc-farm-item-approve-contract,
+      & > .bsc-farm-item-enable {
+        width: 100%;
+      }
+
+      & > div {
+        display: flex;
+        & > div:nth-child(1) {
+          margin-right: 10px;
+        }
+      }
+
+      & > span {
+        color: #FDD284;
+        font-family: poppins_semibold;
+      }
+    }
+  }
+}
+
+.bsc-farm-item-footer {
+  height: 57px;
+  background-color: #1A1E27;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > .btn-bsc {
+    & > button {
+      & > div {
+        span {
+          margin-right: 10px;
+          color: #0DBA88;
+        }
+      }
+    }
+  }
+}
+
+.bsc-farm-item-more {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-top: 0.5px solid #575757;
+  padding: 15px;
+  & > div {
+    display: flex;
+  }
+  .bsc-farm-item-more-top {
+    justify-content: space-between;
+    & > span:nth-child(1) {
+      font-size: 14px;
+      color: white;
+    }
+
+    & > span:nth-child(2) {
+      font-size: 16px;
+      color: #FDD284;
+      font-family: poppins_semibold;
+    }
+  }
+  .bsc-farm-item-more-top,
+  .bsc-farm-item-more-mid {
+    margin-bottom: 10px;
+  }
+  .bsc-farm-item-more-mid,
+  .bsc-farm-item-more-bottom {
+    padding: 0px;
+    & > button {
+      padding: 0px;
+      & > div {
+        justify-content: flex-start;
+        span {
+          color: #0DBA88;
+          margin-right: 5px;
+        }
+      }
+    }
+  } 
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+.text-res-l {
+  color: #808982;
+  font-size: 14px;
+}
+.text-res-r {
+  font-size: 18px;
+  color:#fff;
+}

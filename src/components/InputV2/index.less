@@ -1,0 +1,33 @@
+.bsc-input {
+  display: flex;
+  background-color: #242424;
+  border-radius: 8px;
+  height: 50px;
+  padding: 0 6px;
+  & > input {
+    background-color: #242424;
+    outline: none;
+    border: none;
+    flex: 1;
+    color: #C4BCAA;
+    font-size: 16px;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+  & > .bsc-input-left,
+  & > .bsc-input-right {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,125 @@
+html {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: poppins_bold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins_medium;
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins_regular;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins_semibold;
+    src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: poppins_extrabold;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+* {
+    font-family: poppins_regular;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 100%;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+    width: 5px;
+    border-radius: 5px;
+    height: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #282727;
+    width: 5px;
+    border-radius: 5px;
+    height: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    width: 5px;
+    border-radius: 5px;
+    height: 5px;
+}
+
+body {
+    background: #141412;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.collapse__arrow {
+    transition: 0.5s;
+}
+
+.collapse__title-active > div {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.collapse__arrow--active {
+    transform: rotate(180deg);
+}
+
+
+#container__card-start-earn-0 {
+    perspective: 30px;
+}
+
+#container__card-start-earn-1 {
+    perspective: 30px;
+}
+
+#container__card-start-earn-2 {
+    perspective: 30px;
+}
+
+#inner__card-start-earn-0 {
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+}
+
+#inner__card-start-earn-1 {
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+}
+
+#inner__card-start-earn-2 {
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+}
+
+.color-primary {
+    color: #16B979;
+}
+
+.text-md{
+    font-size: 20px;
+}

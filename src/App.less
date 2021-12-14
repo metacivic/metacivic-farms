@@ -1,0 +1,27 @@
+.bsc-farm {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .bsc-farm-header {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 0 3px 0 #000000;
+  }
+  .bsc-farm-content {
+    display: flex;
+    padding-top: 90px;
+    .bsc-farm-content-menu {
+      display: flex;
+      height: calc(100vh - 90px);
+      overflow: auto;
+    }
+    .bsc-farm-content-page {
+      // display: flex;
+      overflow: auto;
+      height: calc(100vh - 90px);
+      flex: 1;
+    } 
+  }
+}

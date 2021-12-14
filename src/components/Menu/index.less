@@ -1,0 +1,221 @@
+// .ant-menu-item:hover {
+//   background-color: @menu-item-active-bg;
+// }
+
+// .ant-menu-item::after {
+//   display: none;
+// }
+
+// .ant-menu-item {
+//   border-radius: 6px;
+// }
+
+// .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+//   border-right: none !important;
+// }
+
+// .ant-menu-item, .ant-menu-submenu-title {
+//   width: unset !important;
+//   margin-left: 6px !important;
+//   margin-right: 6px !important;
+// }
+
+// .ant-menu-item {
+//   justify-content: center;
+//   align-items: center;
+//   display: flex;
+// }
+
+
+// .ant-menu-submenu-title,
+// .ant-menu-item{
+//   padding: unset !important;
+// }
+
+// .ant-menu-item-icon {
+//   min-width: 30px !important;
+// }
+.menu-bsc {
+  width: 240px;
+  position: relative;
+  background-color: #1C1B1B;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: rgba(51 ,48 ,48 ,0.58) 2px 0px 3px 0px;
+  box-shadow: rgba(51 ,48 ,48 ,0.58) 2px 0px 3px 0px;
+  padding-right: 2px;
+  padding-top: 2px;
+  transition: padding-top 0.2s ease 0s, width 0.2s ease 0s;
+  transform: translate3d(0px, 0px, 0px);
+  overflow: hidden;
+  .menu-bsc-header {
+    
+  }
+
+  .menu-bsc-item-selected {
+    box-shadow: rgb(13,186,136) 4px 0px 0px inset;
+    background-color: #242424;
+  }
+  
+  .menu-bsc-body {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 114px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+  }
+  
+  .menu-bsc-item,
+  .menu-bsc-sub-menu {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    // margin-left: 6px;
+    // margin-right: 6px;
+  }
+  .menu-bsc-item,
+  .menu-bsc-sub-menu {
+    // margin-bottom: 5px;
+    // margin-top: 5px;
+  }
+
+  .menu-bsc-item:hover,
+  .menu-bsc-sub-menu:hover {
+    background-color: rgb(64, 64, 64);
+    
+  }
+
+  .menu-bsc-collapsed-wrapper {
+    .menu-bsc-item:hover {
+      span {
+        color: white !important; 
+      }
+    }
+  }
+  
+  .menu-bsc-item-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .menu-bsc-item-wrapper .menu-item-text {
+    color: #FAC668;
+    font-size: 18px;
+    margin-left: 12px;
+    font-family: Kanit, sans-serif;
+  }
+
+  .menu-bsc-item-wrapper .menu-item-image {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .menu-bsc-bottom {
+    height: 114px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .menu-bsc-bottom-top {
+    height: 50px;
+    width: 100%;
+  }
+  
+  .menu-bsc-bottom-top img {
+    margin-right: 17.5px;
+  }
+  
+  .menu-bsc-bottom-top span {
+    margin-left: 17.5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FAC668;
+  }
+  
+  .menu-bsc-bottom-bottom {
+    height: 64px;
+    justify-content: space-between !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+  }
+  
+  .menu-bsc-bottom-divider {
+    border-top: 1px solid #41413F;
+  }
+  
+  .flex-center-bsc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-bsc-sub-menu {
+    justify-content: space-between;
+  }
+
+  .menu-bsc-bottom-bottom img,
+  .menu-bsc-bottom-top img {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.menu-bsc-collapsed {
+  width: 56px;
+  .menu-bsc-item,
+  .menu-bsc-sub-menu {
+    padding: 0px;
+    padding-left: 16px;
+  }
+  .menu-bsc-bottom {
+    padding: 0px;
+  }
+  .menu-bsc-bottom-bottom {
+    justify-content: center !important;
+    padding: unset !important;
+  }
+
+  .menu-bsc-bottom-top img {
+    margin-right: unset;
+  }
+}
+
+.menu-bsc-collapsed-wrapper {
+  background-color: #121110;
+}
+
+.menu-bsc-mobile {
+  position: fixed;
+  left: 0;
+  z-index: 100000;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s inset;
+  .menu-bsc-bottom {
+    position: unset !important;
+  }
+  .menu-bsc-body {
+    margin-bottom: 0px !important;
+    width: 100%;
+  }
+}
+
+.menu-bsc-mobile-collapsed {
+  visibility: visible;
+  opacity: 1;
+  overflow: auto;
+  height: calc(100vh - 90px);
+}

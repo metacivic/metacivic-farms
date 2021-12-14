@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="25" viewBox="0 0 30 25">
+  <defs>
+    <clipPath id="clip-icon_unlock_wallet">
+      <rect width="30" height="25"/>
+    </clipPath>
+  </defs>
+  <g id="icon_unlock_wallet" data-name="icon unlock wallet" clip-path="url(#clip-icon_unlock_wallet)">
+    <path id="left-arrow_1_" data-name="left-arrow (1)" d="M36.277,23.065H11.75l9.392-8.946a1.23,1.23,0,0,0-1.7-1.781L8.72,22.555a2.458,2.458,0,0,0,.022,3.5l10.7,10.2a1.229,1.229,0,1,0,1.7-1.78l-9.431-8.945H36.277a1.229,1.229,0,1,0,0-2.459Z" transform="translate(37.507 36.589) rotate(180)" fill="#f3cc0b"/>
+  </g>
+</svg>

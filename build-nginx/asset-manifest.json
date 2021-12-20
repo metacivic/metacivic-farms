@@ -2,9 +2,9 @@
   "files": {
     "static/js/0.65006e22.chunk.js": "/static/js/0.65006e22.chunk.js",
     "static/js/0.65006e22.chunk.js.map": "/static/js/0.65006e22.chunk.js.map",
-    "main.css": "/static/css/main.29f3b4ed.chunk.css",
-    "main.js": "/static/js/main.c621cb46.chunk.js",
-    "main.js.map": "/static/js/main.c621cb46.chunk.js.map",
+    "main.css": "/static/css/main.236f283f.chunk.css",
+    "main.js": "/static/js/main.4a1cb7d4.chunk.js",
+    "main.js.map": "/static/js/main.4a1cb7d4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8b15a152.js",
     "runtime-main.js.map": "/static/js/runtime-main.8b15a152.js.map",
     "static/css/3.0b548c17.chunk.css": "/static/css/3.0b548c17.chunk.css",
@@ -26,7 +26,7 @@
     "static/js/10.76b77497.chunk.js.map": "/static/js/10.76b77497.chunk.js.map",
     "index.html": "/index.html",
     "static/css/3.0b548c17.chunk.css.map": "/static/css/3.0b548c17.chunk.css.map",
-    "static/css/main.29f3b4ed.chunk.css.map": "/static/css/main.29f3b4ed.chunk.css.map",
+    "static/css/main.236f283f.chunk.css.map": "/static/css/main.236f283f.chunk.css.map",
     "static/js/3.d2bbfaaa.chunk.js.LICENSE.txt": "/static/js/3.d2bbfaaa.chunk.js.LICENSE.txt",
     "static/js/5.0bbdcad9.chunk.js.LICENSE.txt": "/static/js/5.0bbdcad9.chunk.js.LICENSE.txt",
     "static/js/6.3c0e02d3.chunk.js.LICENSE.txt": "/static/js/6.3c0e02d3.chunk.js.LICENSE.txt",
@@ -36,7 +36,7 @@
     "static/media/FarmNew.17ee7f1c.svg": "/static/media/FarmNew.17ee7f1c.svg",
     "static/media/index.css": "/static/media/Poppins-SemiBold.cce5625b.ttf",
     "static/media/Vector.98835817.svg": "/static/media/Vector.98835817.svg",
-    "static/media/bgHeaderNew.e1f074b2.svg": "/static/media/bgHeaderNew.e1f074b2.svg",
+    "static/media/bg-header-01.6bf8b6d6.png": "/static/media/bg-header-01.6bf8b6d6.png",
     "static/media/binance_chain.ac3f797a.svg": "/static/media/binance_chain.ac3f797a.svg",
     "static/media/brand-bsc-black.699a37aa.svg": "/static/media/brand-bsc-black.699a37aa.svg",
     "static/media/brand-busd.179eb309.svg": "/static/media/brand-busd.179eb309.svg",
@@ -56,7 +56,7 @@
     "static/js/runtime-main.8b15a152.js",
     "static/css/3.0b548c17.chunk.css",
     "static/js/3.d2bbfaaa.chunk.js",
-    "static/css/main.29f3b4ed.chunk.css",
-    "static/js/main.c621cb46.chunk.js"
+    "static/css/main.236f283f.chunk.css",
+    "static/js/main.4a1cb7d4.chunk.js"
   ]
 }

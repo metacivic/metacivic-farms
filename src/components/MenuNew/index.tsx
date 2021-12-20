@@ -38,12 +38,13 @@ const MenuNew = () => {
 		<>
 			<header>
 				<div className="main-header">
+					<div className="all">
 					<div className="header-left">
 						<div className="main-logo">
 							<Link to="/">
 								<div className="d-flex align-items-center">
-									<img src="/LogoNew1.png" alt="" />
-									<h1 className="h__textLogo">METACIVIC</h1>
+									<img src="/logo-MCV-ffff.svg" alt="" />
+									{/* <h1 className="h__textLogo">METACIVIC</h1> */}
 								</div>
 							</Link>
 						</div>
@@ -131,10 +132,7 @@ const MenuNew = () => {
 					</div>
 					<div className="header-right">
 						<div className="value-token">
-							<img src="icon-coin.png" alt="" /> <span>$1.07</span>
-						</div>
-						<div className="setting">
-							<img src="setting-2.png" alt="" />
+							<img src="logo-mini.svg" alt="" /> <span>$1.07</span>
 						</div>
 						<div className="connect-wallet">
 							{!account ? (
@@ -153,6 +151,7 @@ const MenuNew = () => {
 								/>
 							)}
 						</div>
+					</div>
 					</div>
 				</div>
 			</header>

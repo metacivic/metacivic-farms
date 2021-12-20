@@ -85,7 +85,7 @@ const PoolCards = () => {
 				>
 					<Tab className="bsc-nav-tabs" eventKey="Live" title="Live">
 						<Tabs
-							defaultActiveKey="list"
+							defaultActiveKey="grid"
 							id="uncontrolled-tab-example"
 							className="box-list-grid"
 						>
@@ -139,7 +139,7 @@ const PoolCards = () => {
 								<br />
 								<div className="back-to-top">
 									<button type="button" onClick={scrollToTop}>
-										To Top <img src={arrowRight} alt="" />
+										To Top 
 									</button>
 								</div>
 								<br />
@@ -254,7 +254,7 @@ const PoolCards = () => {
 									<br />
 									<div className="back-to-top">
 										<button type="button" onClick={scrollToTop}>
-											To Top <img src={arrowRight} alt="" />
+											To Top 
 										</button>
 									</div>
 									<br />

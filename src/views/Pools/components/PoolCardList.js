@@ -27,7 +27,7 @@ import { ChevronDown, ChevronUp } from 'react-feather'
 import { UpOutlined, DownOutlined } from '@ant-design/icons'
 import { formatNumber } from '../../../utils/formatBalance'
 import CulatingImages from './images/calculating.png'
-import InfoImages from './images/export.png'
+import InfoImages from './images/info-hihi.png'
 import ApyCalculatorModal from 'components/ApyCalculatorModal'
 import { BIG_ZERO } from '../../../utils/bigNumber'
 
@@ -255,10 +255,10 @@ const PoolCardList = ({ pool, userDataLoaded }) => {
 					right={
 						isView ? (
 							// <ChevronUp color="#0DBA88" size={16} />
-							<UpOutlined color="#0DBA88" style={{ paddingLeft: '5px' }} />
+							<UpOutlined color="#fff" style={{ paddingLeft: '5px' }} />
 						) : (
 							// <ChevronDown color="#0DBA88" size={16} />
-							<DownOutlined color="#0DBA88" style={{ paddingLeft: '5px' }} />
+							<DownOutlined color="#fff" style={{ paddingLeft: '5px' }} />
 						)
 					}
 				/>

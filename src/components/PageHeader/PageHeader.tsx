@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Container from '../Container'
 
-import BGHeader from '../../assets/images/bgHeaderNew.svg'
+import BGHeader from '../../assets/images/bg-header-01.png'
 
 interface PageHeaderProps {
 	icon?: any
@@ -26,13 +26,16 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 								<img src={icon} height="125" />
 							</StyledIcon>
 						)}
-						<StyledTitle>{title}</StyledTitle>
+						<StyledTitle>Farms</StyledTitle>
 						<StyledSubtitle>
 							<span className="desc-header">{subtitle1}</span>
 						</StyledSubtitle>
 						<button type="button" className="btn-more-details">
-							More details...
+							More details
 						</button>
+						<div className="box-img">
+							<img src="../images/img-header-01.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</StyledPageHeader>
@@ -41,6 +44,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 }
 
 const StyledPageHeader = styled.div`
+	height: 620px;
 	padding-left: 20px;
 	justify-content: center;
 	align-items: flex-start;
@@ -49,7 +53,7 @@ const StyledPageHeader = styled.div`
 	flex-direction: column;
 	background-image: linear-gradient(199.07deg, rgba(13, 14, 17, 0.26) -30.81%, rgba(13, 14, 17, 0.35) -30.77%, #5FF985 342.39%) ,url(${BGHeader});
 		
-	background-position: right top;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto;
 	margin-left: auto;

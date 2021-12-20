@@ -289,9 +289,9 @@ const PoolCardList = ({ pool, userDataLoaded }) => {
 					text={isView ? 'Hide' : 'Details'}
 					right={
 						isView ? (
-							<ChevronUp color="#0DBA88" size={16} />
+							<ChevronUp color="#fff" size={16} />
 						) : (
-							<ChevronDown color="#0DBA88" size={16} />
+							<ChevronDown color="#fff" size={16} />
 						)
 					}
 				/>

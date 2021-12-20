@@ -383,7 +383,7 @@ const FCard = styled.div`
 	width: 100%;
 	max-width: 360px;
 	align-self: baseline;
-	background: #262424;
+	background: #333333;
 	border-radius: 32px;
 	box-shadow: rgb(0 0 0 / 6%) 0px 16px 24px, rgb(0 0 0 / 4%) 0px 2px 6px,
 		rgb(0 0 0 / 4%) 0px 0px 1px;

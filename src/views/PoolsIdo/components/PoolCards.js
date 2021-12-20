@@ -96,7 +96,7 @@ const PoolCards = () => {
 								<br />
 								<div className="back-to-top">
 									<button type="button" onClick={scrollToTop}>
-										To Top <img src={arrowRight} alt="" />
+										To Top 
 									</button>
 								</div>
 								<br />
@@ -160,7 +160,7 @@ const PoolCards = () => {
 									<br />
 									<div className="back-to-top">
 										<button type="button" onClick={scrollToTop}>
-											To Top <img src={arrowRight} alt="" />
+											To Top 
 										</button>
 									</div>
 									<br />

@@ -169,7 +169,7 @@ function MenuNewMobile () {
                         </Drawer>  
                     </div>
                     <div className="main-logo">
-                        <img src="logo-m.png" alt="" />
+                        <img src="logo-MVC-ffff.svg" alt="" />
                     </div>
                 </div>
                 <div className="header-r-mobile">

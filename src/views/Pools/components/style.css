@@ -30,6 +30,9 @@
   .ant-collapse-header {
   border-radius: 10px 10px 0 0 !important;
 }
+.main-arte-custom {
+  padding-bottom: 180px;
+}
 .main-arte-custom .box-list-item {
   margin-top: 0;
 }
@@ -137,7 +140,7 @@
   font-weight: 400;
 }
 .box-list-item .ant-collapse > .ant-collapse-item > .ant-collapse-header {
-  background: #1a1e27 !important;
+  background: #333333 !important;
   border-bottom: 0px solid #575757;
 }
 .box-list-item.ido-pool
@@ -174,7 +177,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #16b979;
+  color: #ED8F0F;
   margin-bottom: 0px;
 }
 .box-header-list .item-tow-part .box-earned .total-coin > div {
@@ -183,7 +186,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-bottom: 0;
-  color: #16b979;
+  color: #ED8F0F;
 }
 .box-header-list .item-tow-part .box-earned .total-usd {
   font-size: 12px;
@@ -216,7 +219,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #16b979;
+  color: #ED8F0F;
   margin-bottom: 0;
 }
 .box-header-list .item-tow-part .box-img-calculating {
@@ -284,7 +287,7 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.03em;
-  color: #0dba88;
+  color: #fff;
 }
 .box-list-item .ant-collapse-content-box {
   background: #121517;
@@ -313,7 +316,7 @@
   margin-bottom: 10px;
 }
 .box-content-body .item-three-part .text-view-info a {
-  color: #f5de05;
+  color: #F65252;
 }
 .box-content-body .item-three-part .text-view-info img {
   margin-left: 5px;
@@ -329,7 +332,7 @@
   .text-ends-in
   .d-flex.align-items-center
   > div {
-  color: #0dba88 !important;
+  color: #ED8F0F !important;
 }
 .box-content-body .item-four-part .box-harvest .harvest-left .text-harvest {
   font-weight: 600;
@@ -377,8 +380,8 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #1a1e27;
-  border: 2px solid#1A1E27;
+  background: #333333;
+  border: 2px solid #333333;
   box-sizing: border-box;
   border-radius: 18px;
   padding: 15px 20px;
@@ -386,8 +389,8 @@
   min-height: 140px;
 }
 .box-content-body .item-four-part .box-start-staking {
-  background: #1a1e27;
-  border: 2px solid#1A1E27;
+  background: #333333;
+  border: 2px solid #333333;
   box-sizing: border-box;
   border-radius: 18px;
   padding: 15px 20px;
@@ -438,7 +441,7 @@
   position: relative;
 }
 .stake-only .ant-switch-checked {
-  background-color: #f5de03 !important;
+  background: linear-gradient(270deg, #CC0000 0%, #F72A2A 100%) !important;
 }
 .stake-only .ant-switch {
   background: #2e2e2e;
@@ -456,12 +459,12 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.03em;
-  color: #0dba88;
+  color: #F42727;
   padding: 15px 0;
   margin: auto;
   text-align: center;
-  border: 0.5px solid #333333;
-  border-top: 0.5px solid #333333;
+  border: 0.5px solid #F42727;
+  border-top: 0.5px solid #F42727;
   border-radius: 10px;
 }
 .back-to-top button {
@@ -680,7 +683,7 @@
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.03em;
-  color: #f5de05;
+  color: #F65252;
 }
 
 @media screen and (max-width: 768px) {
@@ -1124,12 +1127,12 @@ img.logo-big.lp {
   position: relative;
 }
 .main-arte-custom .nav-tabs > .nav-item.active {
-  background: #f5de05 !important;
-  border-radius: 10px !important;
-  color: #121517 !important;
+  background: #CC0000 !important;
+  border-radius: 25px !important;
+  color: #Fff !important;
 }
 .main-arte-custom .nav-tabs > .nav-item {
-  border-radius: 10px !important;
+  border-radius: 25px !important;
   background: #272c35 !important;
   color: #808982 !important;
 }
@@ -1137,12 +1140,12 @@ img.logo-big.lp {
   background: transparent !important;
 }
 .main-arte-custom {
-  background: #15191e;
+  background: #000;
   margin-top: -20px;
   padding-top: 20px;
 }
 .row-flex > div {
-  color: #16b979;
+  color: #ED8F0F;
 }
 .f-18 {
   font-size: 18px !important;
@@ -1158,7 +1161,7 @@ img.logo-big.lp {
   margin: 0 15px;
 }
 .btn-bsc-primary {
-  background-color: #16b979;
+  background: linear-gradient(270deg, #CC0000 0%, #F72A2A 100%);
 }
 .bsc-stake_in_pool-modal .bsc-stake_in_pool-modal-header > span:nth-child(2) {
   color: #16b979;
@@ -1168,7 +1171,7 @@ img.logo-big.lp {
   width: 130px;
 }
 .box-start-staking > div > span {
-  color: #16b979 !important;
+  color: #ED8F0F !important;
 }
 .text-search-cus {
   color: #808982;
@@ -1188,7 +1191,7 @@ img.logo-big.lp {
   color: #f5de05 !important;
 }
 .main-arte-custom .box-list-grid.nav-tabs > .nav-item.active svg {
-  fill: #f5de05;
+  fill: #fff;
 }
 @media screen and (max-width: 768px) {
   .stake-rele {

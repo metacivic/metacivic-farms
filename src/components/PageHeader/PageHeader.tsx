@@ -34,7 +34,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 							More details
 						</button>
 						<div className="box-img">
-							<img src="../images/img-header-01.png" alt="" />
+							<img src="../images/Illustration.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -44,7 +44,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 }
 
 const StyledPageHeader = styled.div`
-	height: 620px;
+	height: 350px;
 	padding-left: 20px;
 	justify-content: center;
 	align-items: flex-start;

@@ -42,7 +42,7 @@ const StyledResponsiveWrapper = styled.div`
 `
 
 const StyledModal = styled.div`
-	background: #1a1e27;
+	background: #353945;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;

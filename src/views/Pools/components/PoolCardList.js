@@ -220,7 +220,7 @@ const PoolCardList = ({ pool, userDataLoaded }) => {
 						</button>
 					</p>
 					<div className="d-flex f-gap">
-						<p className="number-apr">
+						<p className="number-apr h__FontNum">
 							{pool.apr ? <>{formatNumber(pool.apr)}%</> : '0%'}
 						</p>
 					</div>

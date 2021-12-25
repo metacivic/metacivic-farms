@@ -27,6 +27,11 @@ html {
     src: url(./assets/fonts/Poppins-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: Polaris;
+    src: url(./assets/fonts/Polaris.otf);
+}
+
 * {
     font-family: 'Inter';
 }

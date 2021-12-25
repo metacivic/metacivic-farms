@@ -321,7 +321,7 @@
 }
 .box-content-body .item-three-part .text-view-info a {
   /* color: #f65252; */
-  color: #FFBEBE;
+  color: #ffbebe;
 }
 .box-content-body .item-three-part .text-view-info img {
   margin-left: 5px;
@@ -689,7 +689,7 @@
   line-height: 21px;
   letter-spacing: 0.03em;
   /* color: #f65252; */
-  color: #FFBEBE;
+  color: #ffbebe;
 }
 
 @media screen and (max-width: 768px) {
@@ -1156,9 +1156,10 @@ img.logo-big.lp {
 }
 
 .total-coin .row-flex > div {
-  color: #ED8F0F;
+  color: #ed8f0f;
   /* color: #ffcf4f; */
 }
+
 .f-18 {
   font-size: 18px !important;
 }
@@ -1301,7 +1302,7 @@ img.logo-big.lp {
 }
 
 .text-rest.total-raise {
-  color: #E6E8EC !important;
+  color: #e6e8ec !important;
   font-size: 16px;
 }
 
@@ -1315,9 +1316,15 @@ img.logo-big.lp {
 }
 
 .h__Primary {
-  color: #FFCF4F;
+  color: #ffcf4f;
 }
 
 .h__Primary2 {
-  color: #ED8F0F;
+  color: #ed8f0f;
+}
+
+.h__FontNum {
+  font-family: 'Polaris';
+  font-size: 18px;
+  font-weight: 400;
 }

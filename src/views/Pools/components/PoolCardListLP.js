@@ -189,7 +189,7 @@ const PoolCardListLP = ({ pool, userDataLoaded }) => {
 			<div className="item-tow-part farm-lp d-flex">
 				<div className="box-apr">
 					<p className="text-apr">APR</p>
-					<p className="number-apr">
+					<p className="number-apr h__FontNum">
 						{pool.apr ? <>{formatNumber(pool.apr)}%</> : '0%'}
 					</p>
 				</div>

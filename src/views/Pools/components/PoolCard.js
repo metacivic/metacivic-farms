@@ -232,7 +232,7 @@ const PoolCard = ({ pool, userDataLoaded }) => {
 			>
 				<div className="text-md d-flex justify-content-between">
 					<span className="text-res-l">APR:</span>
-					<span className="color-primary font-weight-bold">
+					<span className="color-primary h__FontNum">
 						{pool.apr ? <>{formatNumber(pool.apr)}%</> : '0%'}
 						<button
 							type="button"

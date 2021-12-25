@@ -108,7 +108,8 @@ const MenuNew = () => {
 									</div>
 								</li>
 								<li>
-									<img src="icon-menu.png" alt="" />
+									{/* <img src="icon-menu.png" alt="" /> */}
+									...
 									<div className="submenu-nav">
 										<ul>
 											<li>
@@ -130,9 +131,9 @@ const MenuNew = () => {
 						</div>
 						{/* fagsjdha  */}
 					</div>
-					<div className="header-right">
-						<div className="value-token">
-							<img src="logo-mini.svg" alt="" /> <span>$1.07</span>
+					<div className="header-right gap">
+						<div className="value-token ">
+							<img src="logo-mini.svg" alt="" /> <span className='h__FontNum'>$1.07</span>
 						</div>
 						<div className="connect-wallet">
 							{!account ? (

@@ -89,24 +89,26 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 					>
 						View on Bscscan &nbsp;
 						<svg
-							width="24"
-							height="24"
 							viewBox="0 0 24 24"
-							fill="none"
+							color="primary"
+							width="20px"
 							xmlns="http://www.w3.org/2000/svg"
+							className="sc-bdfBwQ tqmjO"
 						>
 							<path
-								d="M4.01 6.03L11.52 9.25L4 8.25L4.01 6.03ZM11.51 14.75L4 17.97V15.75L11.51 14.75ZM2.01 3L2 10L17 12L2 14L2.01 21L23 12L2.01 3Z"
+								d="M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z"
 								fill="#ED8F0F"
-							/>
+							></path>
 						</svg>
 					</a>
 				</ButtonCusTom>
 
 				<Spacer />
-				<div className="btnViewModal">
-					<Button onClick={handleSignOutClick} text="Disconnect wallet" />
-				</div>
+				<ButtonCusTomx>
+					<button type="button" onClick={handleSignOutClick}>
+						Disconnect Wallet
+					</button>
+				</ButtonCusTomx>
 			</ModalContent>
 		</Modal>
 	)
@@ -142,6 +144,7 @@ const ButtonCusTom = styled.button`
 		font-weight: 600;
 		line-height: 1.5;
 		color: #ed8f0f !important;
+		/* color: #f5de05 !important; */
 		padding-right: 8px;
 	}
 `
@@ -149,7 +152,7 @@ const Text = styled.div`
 	font-weight: 600;
 	line-height: 1.5;
 	font-size: 16px;
-	background: #fff;
+	background: #272c35;
 	color: #777e90 !important;
 	padding: 8px;
 	border-radius: 8px;
@@ -164,6 +167,33 @@ const Text = styled.div`
 		border: none;
 		outline: none;
 		background: transparent;
+	}
+`
+
+const ButtonCusTomx = styled.button`
+	background: transparent;
+	border: none;
+	outline: none;
+
+	button {
+		background: transparent;
+		border: 1px solid #f42727;
+		border-radius: 8px;
+		font-weight: 500;
+		height: 40px;
+		padding: 0 20px;
+		color: #f42727;
+		cursor: pointer;
+		display: inline-flex;
+		font-family: inherit;
+		font-size: 16px;
+		font-weight: 600;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 0.03em;
+		opacity: 1;
+		outline: 0px;
+		transition: background-color 0.2s ease 0s;
 	}
 `
 

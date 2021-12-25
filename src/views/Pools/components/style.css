@@ -177,7 +177,7 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ED8F0F;
+  color: #ed8f0f;
   margin-bottom: 0px;
 }
 .box-header-list .item-tow-part .box-earned .total-coin > div {
@@ -186,7 +186,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   margin-bottom: 0;
-  color: #ED8F0F;
+  color: #ed8f0f;
 }
 .box-header-list .item-tow-part .box-earned .total-usd {
   font-size: 12px;
@@ -219,7 +219,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ED8F0F;
+  color: #ed8f0f;
   margin-bottom: 0;
 }
 .box-header-list .item-tow-part .box-img-calculating {
@@ -238,7 +238,9 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #f0eaea;
+  /* color: #f0eaea; */
+  color: #ed8f0f;
+
   margin-bottom: 0;
 }
 .box-header-list .item-tow-part .box-total-staked .number-total-staked > div {
@@ -246,7 +248,9 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #fff;
+  /* color: #fff; */
+  color: #ed8f0f;
+
   margin-right: 5px;
   margin-bottom: 0;
 }
@@ -316,7 +320,8 @@
   margin-bottom: 10px;
 }
 .box-content-body .item-three-part .text-view-info a {
-  color: #F65252;
+  /* color: #f65252; */
+  color: #FFBEBE;
 }
 .box-content-body .item-three-part .text-view-info img {
   margin-left: 5px;
@@ -332,7 +337,7 @@
   .text-ends-in
   .d-flex.align-items-center
   > div {
-  color: #ED8F0F !important;
+  color: #ed8f0f !important;
 }
 .box-content-body .item-four-part .box-harvest .harvest-left .text-harvest {
   font-weight: 600;
@@ -441,7 +446,7 @@
   position: relative;
 }
 .stake-only .ant-switch-checked {
-  background: linear-gradient(270deg, #CC0000 0%, #F72A2A 100%) !important;
+  background: linear-gradient(270deg, #cc0000 0%, #f72a2a 100%) !important;
 }
 .stake-only .ant-switch {
   background: #2e2e2e;
@@ -459,12 +464,12 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.03em;
-  color: #F42727;
+  color: #f42727;
   padding: 15px 0;
   margin: auto;
   text-align: center;
-  border: 0.5px solid #F42727;
-  border-top: 0.5px solid #F42727;
+  border: 0.5px solid #f42727;
+  border-top: 0.5px solid #f42727;
   border-radius: 10px;
 }
 .back-to-top button {
@@ -683,7 +688,8 @@
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.03em;
-  color: #F65252;
+  /* color: #f65252; */
+  color: #FFBEBE;
 }
 
 @media screen and (max-width: 768px) {
@@ -1127,9 +1133,9 @@ img.logo-big.lp {
   position: relative;
 }
 .main-arte-custom .nav-tabs > .nav-item.active {
-  background: #CC0000 !important;
+  background: #cc0000 !important;
   border-radius: 25px !important;
-  color: #Fff !important;
+  color: #fff !important;
 }
 .main-arte-custom .nav-tabs > .nav-item {
   border-radius: 25px !important;
@@ -1145,7 +1151,13 @@ img.logo-big.lp {
   padding-top: 20px;
 }
 .row-flex > div {
+  /* color: #ED8F0F; */
+  color: #ffcf4f;
+}
+
+.total-coin .row-flex > div {
   color: #ED8F0F;
+  /* color: #ffcf4f; */
 }
 .f-18 {
   font-size: 18px !important;
@@ -1161,7 +1173,7 @@ img.logo-big.lp {
   margin: 0 15px;
 }
 .btn-bsc-primary {
-  background: linear-gradient(270deg, #CC0000 0%, #F72A2A 100%);
+  background: linear-gradient(270deg, #cc0000 0%, #f72a2a 100%);
 }
 .bsc-stake_in_pool-modal .bsc-stake_in_pool-modal-header > span:nth-child(2) {
   color: #16b979;
@@ -1171,7 +1183,7 @@ img.logo-big.lp {
   width: 130px;
 }
 .box-start-staking > div > span {
-  color: #ED8F0F !important;
+  color: #ed8f0f !important;
 }
 .text-search-cus {
   color: #808982;
@@ -1239,13 +1251,13 @@ img.logo-big.lp {
 }
 
 .ant-switch {
-  width: 51px;
-  height: 31px;
+  width: 60px;
+  height: 30px;
 }
 
 .ant-switch-handle {
-  width: 27px;
-  height: 27px;
+  width: 28px;
+  height: 28px;
 }
 
 .ant-switch-handle::before {
@@ -1289,7 +1301,7 @@ img.logo-big.lp {
 }
 
 .text-rest.total-raise {
-  color: #ffffff !important;
+  color: #E6E8EC !important;
   font-size: 16px;
 }
 
@@ -1300,4 +1312,12 @@ img.logo-big.lp {
 } */
 .button-show-modal.icon-show-modal {
   padding-left: 5px;
+}
+
+.h__Primary {
+  color: #FFCF4F;
+}
+
+.h__Primary2 {
+  color: #ED8F0F;
 }

@@ -1,5 +1,6 @@
-import React, { useCallback } from 'react'
+import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { useWallet } from 'use-wallet'
 import useTokenBalance from '../../../hooks/useTokenBalance'
 import useBao from '../../../hooks/useBao'
@@ -19,6 +20,22 @@ import './style.less'
 
 const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 	const { account, reset } = useWallet()
+	const [copied, setCopied] = useState(false)
+
+	const IconCoppy = () => (
+		<svg
+			viewBox="0 0 24 24"
+			width="20px"
+			className="sc-bdfBwQ cuVBKS coppy-icon"
+			color="primary"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z"
+				fill="#777E90"
+			></path>
+		</svg>
+	)
 
 	const handleSignOutClick = useCallback(() => {
 		onDismiss!()
@@ -30,9 +47,9 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 
 	return (
 		<Modal>
-			<ModalTitle text="Your Wallet Connected with MetaMask" />
+			<ModalTitle onDismiss={onDismiss} text="Your Wallet" />
 			<ModalContent>
-				<Spacer />
+				{/* <Spacer /> */}
 				{/* <div style={{ display: 'flex' }}>
 					<StyledBalanceWrapper>
 						<CardIcon>
@@ -44,22 +61,52 @@ const AccountModal: React.FC<ModalProps> = ({ onDismiss }) => {
 						</StyledBalance>
 					</StyledBalanceWrapper>
 				</div> */}
-				<div className="btnViewModal-address">
-					<Text className="text">{account} </Text> <div className="icon"><svg viewBox="0 0 24 24" width="20px" className="sc-bdfBwQ cuVBKS coppy-icon" color="primary" xmlns="http://www.w3.org/2000/svg"><path d="M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z" fill="#F5DE05"></path></svg></div> 
-				</div>
+				{/* <div className="btnViewModal-address">
+					<Text className="text">
+						{`${account.substr(0, 4)}...${account.substr(account.length - 17)}`}{' '}
+					</Text>{' '}
+					<CopyToClipboard text={account} onCopy={() => setCopied(true)}>
+						<button className="h__btnCopy">
+							<IconCoppy />
+						</button>
+					</CopyToClipboard>
+				</div> */}
+
+				<Text className="text-custom">
+					{account.substr(0, 10)}...{account.substr(account.length - 17)}
+					<CopyToClipboard text={account} onCopy={() => setCopied(true)}>
+						<button className="h__btnCopy">
+							<IconCoppy />
+						</button>
+					</CopyToClipboard>
+				</Text>
+
+				<ButtonCusTom>
+					<a
+						href={`https://bscscan.com/address/${account}`}
+						target="_blank"
+						rel="noreferrer"
+					>
+						View on Bscscan &nbsp;
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M4.01 6.03L11.52 9.25L4 8.25L4.01 6.03ZM11.51 14.75L4 17.97V15.75L11.51 14.75ZM2.01 3L2 10L17 12L2 14L2.01 21L23 12L2.01 3Z"
+								fill="#ED8F0F"
+							/>
+						</svg>
+					</a>
+				</ButtonCusTom>
 
 				<Spacer />
-				<div className="btnViewModal-bscan">
-					<Button
-						href={`https://bscscan.com/address/${account}`}
-						text="View on Bscscan"
-					/>
-				</div>
-				
-				<Spacer />
 				<div className="btnViewModal">
-					<Button onClick={handleSignOutClick} text="Sign out" />
-				</div>			
+					<Button onClick={handleSignOutClick} text="Disconnect wallet" />
+				</div>
 			</ModalContent>
 		</Modal>
 	)
@@ -71,10 +118,10 @@ const StyledBalance = styled.div`
 	flex-direction: column;
 `
 
-const Text = styled.div`
-	font-size: 20px;
-	font-weight: bold;
-`
+// const Text = styled.div`
+// 	font-size: 20px;
+// 	font-weight: bold;
+// `
 
 const StyledBalanceWrapper = styled.div`
 	align-items: center;
@@ -82,6 +129,42 @@ const StyledBalanceWrapper = styled.div`
 	flex: 1;
 	flex-direction: column;
 	margin-bottom: ${(props) => props.theme.spacing[4]}px;
+`
+
+const ButtonCusTom = styled.button`
+	width: 100%;
+	text-align: left;
+	background: transparent;
+	border: none;
+	outline: none;
+	a {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: #ed8f0f !important;
+		padding-right: 8px;
+	}
+`
+const Text = styled.div`
+	font-weight: 600;
+	line-height: 1.5;
+	font-size: 16px;
+	background: #fff;
+	color: #777e90 !important;
+	padding: 8px;
+	border-radius: 8px;
+	display: flex;
+	gap: 14px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	.h__btnCopy {
+		border: none;
+		outline: none;
+		background: transparent;
+	}
 `
 
 export default AccountModal

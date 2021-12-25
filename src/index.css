@@ -28,7 +28,7 @@ html {
 }
 
 * {
-    font-family: poppins_regular;
+    font-family: 'Inter';
 }
 
 /* width */
@@ -117,7 +117,8 @@ code {
 }
 
 .color-primary {
-    color: #ED8F0F;
+    /* color: #ED8F0F; */
+    color: #FFCF4F;
 }
 
 .text-md{

@@ -26,7 +26,7 @@ const BlockCountdown = ({ pool }) => {
 						{(blocksRemaining || blocksUntilStart) && currentBlock ? (
 							<>
 								{/* <Value size={15} value={blocksToDisplay} decimals={0} /> */}
-								<span className="ml-1">0.00 Blocks</span>
+								<span className="ml-1 h__Primary">0.00 Blocks</span>
 							</>
 						) : (
 							'...'

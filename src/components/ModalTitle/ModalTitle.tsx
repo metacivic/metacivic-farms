@@ -31,6 +31,7 @@ const StyledModalTitle = styled.div`
 	height: ${(props) => props.theme.topBarSize}px;
 	justify-content: space-between;
 	padding: 12px 24px;
+	border-bottom: 0.5px solid rgb(87,87,87);
 
 	.customBtn {
 		padding: 0;

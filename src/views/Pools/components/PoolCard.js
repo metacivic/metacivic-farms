@@ -21,7 +21,7 @@ import { getPoolBlockUnstake } from '../helpers'
 import styled from 'styled-components'
 import { ChevronDown, ChevronUp } from 'react-feather'
 import { formatNumber } from '../../../utils/formatBalance'
-import InfoImages from './images/info-hihi.png'
+import InfoImages from './images/info-hihi2.png'
 import InfoIn from './images/informa.png'
 import { BIG_ZERO } from '../../../utils/bigNumber'
 import ApyCalculatorModal from 'components/ApyCalculatorModal'
@@ -331,7 +331,9 @@ const PoolCard = ({ pool, userDataLoaded }) => {
 						</div>
 					</div>
 				</div>
-				<div></div>
+				<div className="text-left mt-2 text-md">
+					<h5 className='text-white f-18'>Start staking</h5>
+				</div>
 			</div>
 
 			{account ? (

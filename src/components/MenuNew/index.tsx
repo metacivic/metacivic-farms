@@ -13,7 +13,7 @@ import MenuNewMobile from './MenuNewMobile'
 import useModal from '../../hooks/useModal'
 import AccountModal from '../../components/TopBar/components/AccountModal'
 import WalletProviderModal from '../WalletProviderModal/WalletProviderModal'
-import { ReactComponent as VectorIcon } from '../../assets/images/wallets/Vector.svg'
+import { ReactComponent as VectorIcon } from '../../assets/images/Wallet.svg'
 import { ReactComponent as MetamaskIcon } from '../../assets/images/wallets/metamark2.svg'
 
 // import UnlockButton from '../ConnectWalletButton'
@@ -52,8 +52,8 @@ const MenuNew = () => {
 							<ul className="list-menu h__customListMenu">
 								<li>
 									<div className="h__customLogoTrade">
-										<img src="/trade.png" alt="" />
-										<img src="/trade2.png" alt="" />
+										<img src="/images/Trade.png" alt="" />
+										<img src="/images/Trade.png" alt="" />
 									</div>
 									Trade
 									<div className="submenu-nav">
@@ -69,8 +69,8 @@ const MenuNew = () => {
 								</li>
 								<li>
 									<div className="h__customLogoTrade">
-										<img src="/coin.png" alt="" />
-										<img src="/icon-earn.png" alt="" />
+										<img src="/images/Earn.png" alt="" />
+										<img src="/images/Earn.png" alt="" />
 									</div>
 									Earns
 									<div className="submenu-nav">
@@ -86,8 +86,8 @@ const MenuNew = () => {
 								</li>
 								<li>
 									<div className="h__customLogoTrade">
-										<img src="/shop.png" alt="" />
-										<img src="/icon shop.png" alt="" />
+										<img src="/images/NFT.png" alt="" />
+										<img src="/images/NFT.png" alt="" />
 									</div>
 									NFT
 									<div className="submenu-nav">

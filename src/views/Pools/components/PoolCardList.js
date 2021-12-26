@@ -27,7 +27,7 @@ import { ChevronDown, ChevronUp } from 'react-feather'
 import { UpOutlined, DownOutlined } from '@ant-design/icons'
 import { formatNumber } from '../../../utils/formatBalance'
 import CulatingImages from './images/calculating.png'
-import InfoImages from './images/info-hihi.png'
+import InfoImages from './images/info-hihi2.png'
 import ApyCalculatorModal from 'components/ApyCalculatorModal'
 import { BIG_ZERO } from '../../../utils/bigNumber'
 
@@ -220,7 +220,7 @@ const PoolCardList = ({ pool, userDataLoaded }) => {
 						</button>
 					</p>
 					<div className="d-flex f-gap">
-						<p className="number-apr">
+						<p className="number-apr h__FontNum">
 							{pool.apr ? <>{formatNumber(pool.apr)}%</> : '0%'}
 						</p>
 					</div>

@@ -42,13 +42,17 @@ const StyledResponsiveWrapper = styled.div`
 `
 
 const StyledModal = styled.div`
-	background: #353945;
-	border-radius: 10px;
+	background: rgb(26,30,39);
+	box-shadow: rgb(14 14 44 / 10%) 0px 20px 36px -8px,
+		rgb(0 0 0 / 5%) 0px 1px 1px;
+	border: 1px solid rgba(80, 78, 75, 0);
+	border-radius: 18px;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	width: 100%;
 	min-height: 0;
 `
+
 
 export default Modal

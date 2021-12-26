@@ -56,6 +56,12 @@ const StyledValue = styled.div<StyledValueProps>`
 	font-size: ${(props) => (props.size ? `${props.size}px` : '36px')};
 	font-weight: 700;
 	color: #fdd284;
+
+	span {
+		font-family: 'Polaris';
+		font-size: 18px;
+		font-weight: 400;
+	}
 `
 
 export default Value

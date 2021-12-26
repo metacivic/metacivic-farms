@@ -27,8 +27,13 @@ html {
     src: url(./assets/fonts/Poppins-ExtraBold.ttf);
 }
 
+@font-face {
+    font-family: Polaris;
+    src: url(./assets/fonts/Polaris.otf);
+}
+
 * {
-    font-family: poppins_regular;
+    font-family: 'Inter';
 }
 
 /* width */
@@ -117,7 +122,8 @@ code {
 }
 
 .color-primary {
-    color: #ED8F0F;
+    /* color: #ED8F0F; */
+    color: #FFCF4F;
 }
 
 .text-md{

@@ -26,16 +26,16 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 								<img src={icon} height="125" />
 							</StyledIcon>
 						)}
-						<StyledTitle>Farms</StyledTitle>
+						<StyledTitle>{title}</StyledTitle>
 						<StyledSubtitle>
 							<span className="desc-header">{subtitle1}</span>
 						</StyledSubtitle>
 						<button type="button" className="btn-more-details">
 							More details
 						</button>
-						<div className="box-img">
+						{/* <div className="box-img">
 							<img src="../images/Illustration.png" alt="" />
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</StyledPageHeader>
@@ -51,11 +51,10 @@ const StyledPageHeader = styled.div`
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	 background: url(${BGHeader});
-
-	background-position: center;
+	background-image:url(./images/mcvBgPools.png);
+	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	margin-left: auto;
 	margin-left: auto;
 `
@@ -76,6 +75,8 @@ const StyledTitle = styled.h1`
 	color: #ffffff;
 	font-family: poppins_bold;
 	text-align: left;
+	font-family: 'Polaris' !important;
+
 `
 
 const StyledSubtitle = styled.h3`

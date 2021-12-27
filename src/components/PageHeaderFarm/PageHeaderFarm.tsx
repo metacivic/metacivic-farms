@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Container from '../Container'
 
-import BGHeaderFarm from '../../assets/images/FarmNew.svg'
+// import BGHeaderFarm from '../../assets/images/FarmNew.svg'
 
 interface PageHeaderProps {
 	icon?: any
@@ -47,17 +47,11 @@ const StyledPageHeader = styled.div`
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	background-image: linear-gradient(
-			199.07deg,
-			rgba(13, 14, 17, 0.26) -30.81%,
-			rgba(13, 14, 17, 0.35) -30.77%,
-			#5ff985 342.39%
-		),
-		url(${BGHeaderFarm});
+	background-image: url(./images/mcvBgPools.png);
 
-	background-position: right top;
+	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
 	margin-left: auto;
 	margin-left: auto;
 
@@ -83,6 +77,7 @@ const StyledTitle = styled.h1`
 	color: #ffffff;
 	font-family: poppins_bold;
 	text-align: left;
+	font-family: 'Polaris' !important;
 `
 
 const StyledSubtitle = styled.h3`
@@ -91,7 +86,7 @@ const StyledSubtitle = styled.h3`
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	color: #808982;
+	color: #fff;
 	text-align: left;
 	line-height: 1.6;
 	margin-bottom: 10px;

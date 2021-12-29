@@ -13,8 +13,12 @@ import MenuNewMobile from './MenuNewMobile'
 import useModal from '../../hooks/useModal'
 import AccountModal from '../../components/TopBar/components/AccountModal'
 import WalletProviderModal from '../WalletProviderModal/WalletProviderModal'
-import { ReactComponent as VectorIcon } from '../../assets/images/Wallet.svg'
-import { ReactComponent as MetamaskIcon } from '../../assets/images/wallets/metamark2.svg'
+
+import { ReactComponent as TradeIcon } from '../../assets/h__img/Trade.svg'
+import { ReactComponent as EarnIcon } from '../../assets/h__img/Earn.svg'
+import { ReactComponent as NftIcon } from '../../assets/h__img/NFT.svg'
+import { ReactComponent as WalletIcon } from '../../assets/h__img/Wallet.svg'
+// import { ReactComponent as LogoIcon } from '../../assets/h__img/logo-MCV-fff.svg'
 
 // import UnlockButton from '../ConnectWalletButton'
 import 'antd/dist/antd.css'
@@ -39,120 +43,118 @@ const MenuNew = () => {
 			<header>
 				<div className="main-header">
 					<div className="all">
-					<div className="header-left">
-						<div className="main-logo">
-							<Link to="/">
-								<div className="d-flex align-items-center">
-									<img src="/logo-MCV-ffff.svg" alt="" />
-									{/* <h1 className="h__textLogo">METACIVIC</h1> */}
-								</div>
-							</Link>
+						<div className="header-left">
+							<div className="main-logo">
+								<Link to="/">
+									<div className="d-flex align-items-center h__Logo">
+										<img src="/logo-MCV-ffff.svg" alt="" />
+										{/* <h1 className="h__textLogo">METACIVIC</h1> */}
+									</div>
+								</Link>
+							</div>
+							<div className="main-menu">
+								<ul className="list-menu h__customListMenu">
+									<li>
+										<div className="h__customLogoTrade">
+											<TradeIcon />
+										</div>
+										Trade
+										<div className="submenu-nav">
+											<ul>
+												<li>
+													<Link to="/swap">Exchange</Link>
+												</li>
+												<li>
+													<Link to="/pool">Add liquidity</Link>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div className="h__customLogoTrade">
+											<EarnIcon />
+										</div>
+										Earns
+										<div className="submenu-nav">
+											<ul>
+												<li>
+													<Link to="/Farms">Farm</Link>
+												</li>
+												<li>
+													<Link to="/">Start Pools</Link>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div className="h__customLogoTrade">
+											<NftIcon />
+										</div>
+										NFT
+										<div className="submenu-nav">
+											<ul>
+												<li>
+													<Link to="/">Mint NFT</Link>
+												</li>
+												<li>
+													<Link to="/">NFT Markets</Link>
+												</li>
+												<li>
+													<Link to="/">My Collections</Link>
+												</li>
+												<li>
+													<Link to="/">Stake NFT</Link>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										{/* <img src="icon-menu.png" alt="" /> */}
+										<span>...</span>
+										<div className="submenu-nav">
+											<ul>
+												<li>
+													<Link to="/">Docs</Link>
+												</li>
+												<li>
+													<Link to="/">Blogs</Link>
+												</li>
+												<li>
+													<Link to="/">Github</Link>
+												</li>
+												<li>
+													<Link to="/">Certick Audit</Link>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+							{/* fagsjdha  */}
 						</div>
-						<div className="main-menu">
-							<ul className="list-menu h__customListMenu">
-								<li>
-									<div className="h__customLogoTrade">
-										<img src="/images/Trade.png" alt="" />
-										<img src="/images/Trade.png" alt="" />
-									</div>
-									Trade
-									<div className="submenu-nav">
-										<ul>
-											<li>
-												<Link to="/swap">Exchange</Link>
-											</li>
-											<li>
-												<Link to="/pool">Add liquidity</Link>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div className="h__customLogoTrade">
-										<img src="/images/Earn.png" alt="" />
-										<img src="/images/Earn.png" alt="" />
-									</div>
-									Earns
-									<div className="submenu-nav">
-										<ul>
-											<li>
-												<Link to="/Farms">Farm</Link>
-											</li>
-											<li>
-												<Link to="/">Start Pools</Link>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									<div className="h__customLogoTrade">
-										<img src="/images/NFT.png" alt="" />
-										<img src="/images/NFT.png" alt="" />
-									</div>
-									NFT
-									<div className="submenu-nav">
-										<ul>
-											<li>
-												<Link to="/">Mint NFT</Link>
-											</li>
-											<li>
-												<Link to="/">NFT Markets</Link>
-											</li>
-											<li>
-												<Link to="/">My Collections</Link>
-											</li>
-											<li>
-												<Link to="/">Stake NFT</Link>
-											</li>
-										</ul>
-									</div>
-								</li>
-								<li>
-									{/* <img src="icon-menu.png" alt="" /> */}
-									...
-									<div className="submenu-nav">
-										<ul>
-											<li>
-												<Link to="/">Docs</Link>
-											</li>
-											<li>
-												<Link to="/">Blogs</Link>
-											</li>
-											<li>
-												<Link to="/">Github</Link>
-											</li>
-											<li>
-												<Link to="/">Certick Audit</Link>
-											</li>
-										</ul>
-									</div>
-								</li>
-							</ul>
+						<div className="header-right gap">
+							<div className="value-token ">
+								<img src="logo-mini.svg" alt="" />{' '}
+								<span className="h__FontNum">$1.07</span>
+							</div>
+							<div className="connect-wallet">
+								{!account ? (
+									<Button
+										primary
+										click={onPresentWalletProviderModal}
+										text={customAccount}
+										left={<WalletIcon />}
+										className="customBtnHd"
+									/>
+								) : (
+									<Button
+										primary
+										click={onPresentAccountModal}
+										text={customAccount}
+									/>
+								)}
+							</div>
 						</div>
-						{/* fagsjdha  */}
-					</div>
-					<div className="header-right gap">
-						<div className="value-token ">
-							<img src="logo-mini.svg" alt="" /> <span className='h__FontNum'>$1.07</span>
-						</div>
-						<div className="connect-wallet">
-							{!account ? (
-								<Button
-									primary
-									click={onPresentWalletProviderModal}
-									text={customAccount}
-									left={<VectorIcon />}
-									className="customBtnHd"
-								/>
-							) : (
-								<Button
-									primary
-									click={onPresentAccountModal}
-									text={customAccount}
-								/>
-							)}
-						</div>
-					</div>
 					</div>
 				</div>
 			</header>

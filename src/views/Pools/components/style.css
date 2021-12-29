@@ -8,6 +8,7 @@
   left: 0;
   margin-left: calc((100% - 1185px) / 2) !important;
 }
+
 .box-list-grid.nav-tabs {
   background-color: transparent !important;
 }
@@ -486,7 +487,7 @@
 
 .box-search-stake {
   position: absolute;
-  right: 0;
+  right: 15px;
   width: 150px;
   top: -5px;
 }
@@ -1327,4 +1328,17 @@ img.logo-big.lp {
   font-family: 'Polaris';
   font-size: 18px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 769px) {
+  .box-list-grid.nav-tabs {
+    left: 130px !important;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .box-list-grid.nav-tabs {
+    top: -106px;
+    left: -4px;
+  }
 }

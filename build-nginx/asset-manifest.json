@@ -2,9 +2,9 @@
   "files": {
     "static/js/0.2627055d.chunk.js": "/static/js/0.2627055d.chunk.js",
     "static/js/0.2627055d.chunk.js.map": "/static/js/0.2627055d.chunk.js.map",
-    "main.css": "/static/css/main.90dcce71.chunk.css",
-    "main.js": "/static/js/main.2278083a.chunk.js",
-    "main.js.map": "/static/js/main.2278083a.chunk.js.map",
+    "main.css": "/static/css/main.411fce68.chunk.css",
+    "main.js": "/static/js/main.17336a4d.chunk.js",
+    "main.js.map": "/static/js/main.17336a4d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f432cf30.js",
     "runtime-main.js.map": "/static/js/runtime-main.f432cf30.js.map",
     "static/css/3.0b548c17.chunk.css": "/static/css/3.0b548c17.chunk.css",
@@ -26,15 +26,18 @@
     "static/js/10.53d2c6db.chunk.js.map": "/static/js/10.53d2c6db.chunk.js.map",
     "index.html": "/index.html",
     "static/css/3.0b548c17.chunk.css.map": "/static/css/3.0b548c17.chunk.css.map",
-    "static/css/main.90dcce71.chunk.css.map": "/static/css/main.90dcce71.chunk.css.map",
+    "static/css/main.411fce68.chunk.css.map": "/static/css/main.411fce68.chunk.css.map",
     "static/js/3.5e8770db.chunk.js.LICENSE.txt": "/static/js/3.5e8770db.chunk.js.LICENSE.txt",
     "static/js/5.b31cae1b.chunk.js.LICENSE.txt": "/static/js/5.b31cae1b.chunk.js.LICENSE.txt",
     "static/js/6.9a83cdb4.chunk.js.LICENSE.txt": "/static/js/6.9a83cdb4.chunk.js.LICENSE.txt",
     "static/js/8.77edd34d.chunk.js.LICENSE.txt": "/static/js/8.77edd34d.chunk.js.LICENSE.txt",
     "static/js/9.77e5dd25.chunk.js.LICENSE.txt": "/static/js/9.77e5dd25.chunk.js.LICENSE.txt",
     "static/media/Banner_Ido.3146652e.png": "/static/media/Banner_Ido.3146652e.png",
+    "static/media/Earn.d9ac4a77.svg": "/static/media/Earn.d9ac4a77.svg",
+    "static/media/NFT.2613ad4c.svg": "/static/media/NFT.2613ad4c.svg",
     "static/media/index.css": "/static/media/Poppins-SemiBold.cce5625b.ttf",
-    "static/media/Wallet.08ed4af2.svg": "/static/media/Wallet.08ed4af2.svg",
+    "static/media/Trade.6bf1b10a.svg": "/static/media/Trade.6bf1b10a.svg",
+    "static/media/Wallet.e6f77c35.svg": "/static/media/Wallet.e6f77c35.svg",
     "static/media/binance_chain.ac3f797a.svg": "/static/media/binance_chain.ac3f797a.svg",
     "static/media/brand-bsc-black.699a37aa.svg": "/static/media/brand-bsc-black.699a37aa.svg",
     "static/media/brand-busd.179eb309.svg": "/static/media/brand-busd.179eb309.svg",
@@ -54,7 +57,7 @@
     "static/js/runtime-main.f432cf30.js",
     "static/css/3.0b548c17.chunk.css",
     "static/js/3.5e8770db.chunk.js",
-    "static/css/main.90dcce71.chunk.css",
-    "static/js/main.2278083a.chunk.js"
+    "static/css/main.411fce68.chunk.css",
+    "static/js/main.17336a4d.chunk.js"
   ]
 }

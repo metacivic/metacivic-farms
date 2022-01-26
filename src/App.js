@@ -8,7 +8,7 @@ import styled from 'styled-components'
 
 import MenuNew from './components/MenuNew'
 import Header from './components/Header'
-import FooterNew from './components/FooterNew'
+import Footer from './components/FooterMcv'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -44,7 +44,7 @@ const App = () => {
 									<PoolsIdo />
 								</Route>
 							</Switch>
-							<FooterNew />
+							<Footer />
 						</div>
 					</div>
 				</div>

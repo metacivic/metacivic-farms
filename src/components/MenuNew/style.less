@@ -24,7 +24,7 @@ header {
 .main-header .header-left .main-menu .list-menu li {
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  // margin-right: 30px;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -310,7 +310,7 @@ header {
 }
 
 .customBtnHd button > div {
-  gap: 10px;
+  // gap: 10px;
 }
 
 .customBtnHd {
@@ -429,4 +429,43 @@ a {
   .ant-collapse-arrow
   svg {
   fill: #fff;
+}
+
+.h__boxIcon {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border-radius: 99px;
+  color: rgb(0, 0, 0);
+}
+
+.mcv_cus {
+  max-width: 100% !important;
+}
+
+.btn-bsc-common button span {
+  font-size: 16px;
+}
+
+.h__btn {
+  border: 2px solid #f72a2a;
+  padding: 0 16px;
+  border-radius: 100px;
+  transition: 0.4s ease;
+  font-family: 'Polaris';
+
+  & button div span {
+    font-family: 'Polaris';
+  }
+}
+
+.drawer-menu
+  .ant-collapse
+  > .ant-collapse-item.ant-collapse-item-active
+  > .ant-collapse-header {
+  background: #272c35;
 }

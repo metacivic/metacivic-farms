@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
+import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Drawer, Collapse } from 'antd'
 import 'antd/dist/antd.css'
@@ -18,11 +19,12 @@ import WalletProviderModal from '../WalletProviderModal/WalletProviderModal'
 import { ReactComponent as TradeIcon } from '../../assets/h__img/Trade.svg'
 import { ReactComponent as EarnIcon } from '../../assets/h__img/Earn.svg'
 import { ReactComponent as NftIcon } from '../../assets/h__img/NFT.svg'
+import { ReactComponent as DotIcon } from '../../assets/h__img/3dot.svg'
 
 function MenuNewMobile() {
 	const [visible, setVisible] = useState(false)
 	const showDrawer = () => {
-		setVisible(true)
+		setVisible(!visible)
 	}
 	const onClose = () => {
 		setVisible(false)
@@ -69,33 +71,43 @@ function MenuNewMobile() {
 	const docs = (
 		<>
 			<div className="header-collapse">
-				<img src="icon-menu.png" alt="" />
+				<DotIcon />
 			</div>
 		</>
 	)
 	const menuTrade = (
 		<>
 			<ul>
-				<li>Exchange</li>
-				<li>Add liquidity</li>
+				<a href="https://metacivic.io/#/swap">
+					<li>Exchange</li>
+				</a>
+				<a href="https://metacivic.io/#/pool">
+					<li>Liquidity</li>
+				</a>
 			</ul>
 		</>
 	)
 	const menuEarn = (
 		<>
 			<ul>
-				<li>Farms</li>
-				<li>Start Pools</li>
+				<Link to="/">
+					<li>Start Pools</li>
+				</Link>
+				<Link to="/Farms">
+					<li>Farms</li>
+				</Link>
 			</ul>
 		</>
 	)
 	const menuNFT = (
 		<>
 			<ul>
-				<li>Mint NFT</li>
-				<li>Marketplace</li>
-				<li>My Collections</li>
-				<li>Stake NFT</li>
+				<a href="https://metacivic.io/#/mintNFT">
+					<li>Mint NFT</li>
+				</a>
+				<a href="https://metacivic.io/#/NFTmarket">
+					<li>NFT Markets</li>
+				</a>
 			</ul>
 		</>
 	)
@@ -128,7 +140,8 @@ function MenuNewMobile() {
 			<div className="footer-menu">
 				<div className="box-footer-menu">
 					<div className="value-token">
-						<img src="icon-coin.png" alt="" /> <span>$1.07</span>
+						<img src="./images/lgmini.svg" alt="" style={{ height: 40 }} />{' '}
+						<span>$0.00</span>
 					</div>
 
 					<div className="box-img socail-footer">
@@ -174,11 +187,16 @@ function MenuNewMobile() {
 				<div className="header-l-mobile">
 					<div className="main-menu">
 						<button
-							className="btn-show-menu"
+							className="btn-show-menu d-flex align-items-center"
 							type="button"
 							onClick={showDrawer}
 						>
-							<img src="icon-menu-m.png" alt="" />
+							<IconMenu>
+								<StyleLine className={`${visible ? 'active' : ''}`} />
+							</IconMenu>
+							<div>
+								<img src="./images/lgmini.svg" alt="" style={{ height: 40 }} />
+							</div>
 						</button>
 						<Drawer
 							title="Basic Drawer"
@@ -218,4 +236,61 @@ function MenuNewMobile() {
 		</>
 	)
 }
+
+const IconMenu = styled.div`
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	z-index: 100000000;
+`
+
+const StyleLine = styled.div`
+	 {
+		width: 30px;
+		height: 4px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		background: linear-gradient(270deg, #cc0000 0%, #f72a2a 100%);
+		-webkit-transition: 0.3s;
+		transition: 0.3s ease;
+		border-radius: 2px;
+	}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 30px;
+		height: 4px;
+		background: linear-gradient(270deg, #cc0000 0%, #f72a2a 100%);
+		transition: 0.3s ease;
+		border-radius: 2px;
+	}
+
+	&::before {
+		top: -8px;
+	}
+
+	&::after {
+		top: 8px;
+	}
+
+	&.active {
+		background: transparent;
+	}
+
+	&.active::after {
+		top: 0;
+		transform: rotate(135deg);
+	}
+
+	&.active::before {
+		top: 0;
+		transform: rotate(45deg);
+	}
+`
 export default MenuNewMobile

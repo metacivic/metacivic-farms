@@ -17,6 +17,9 @@ import WalletProviderModal from '../WalletProviderModal/WalletProviderModal'
 import { ReactComponent as TradeIcon } from '../../assets/h__img/Trade.svg'
 import { ReactComponent as EarnIcon } from '../../assets/h__img/Earn.svg'
 import { ReactComponent as NftIcon } from '../../assets/h__img/NFT.svg'
+import { ReactComponent as GameIcon } from '../../assets/h__img/Game.svg'
+import { ReactComponent as DotIcon } from '../../assets/h__img/3dot.svg'
+
 import { ReactComponent as WalletIcon } from '../../assets/h__img/Wallet.svg'
 // import { ReactComponent as LogoIcon } from '../../assets/h__img/logo-MCV-fff.svg'
 
@@ -25,6 +28,7 @@ import 'antd/dist/antd.css'
 import './style.less'
 
 const MenuNew = () => {
+
 	if (isMobile) {
 		return <MenuNewMobile />
 	}
@@ -42,7 +46,7 @@ const MenuNew = () => {
 		<>
 			<header>
 				<div className="main-header">
-					<div className="all">
+					<div className="all mcv_cus">
 						<div className="header-left">
 							<div className="main-logo">
 								<Link to="/">
@@ -65,7 +69,7 @@ const MenuNew = () => {
 													<a href="https://metacivic.io/#/swap">Exchange</a>
 												</li>
 												<li>
-												<a href="https://metacivic.io/#/pool">Liquidity</a>
+													<a href="https://metacivic.io/#/pool">Liquidity</a>
 												</li>
 											</ul>
 										</div>
@@ -97,24 +101,31 @@ const MenuNew = () => {
 													<a href="https://metacivic.io/#/mintNFT">Mint NFT</a>
 												</li>
 												<li>
-													<a href="https://metacivic.io/#/NFTmarket">NFT Markets</a>
+													<a href="https://metacivic.io/#/NFTmarket">
+														NFT Markets
+													</a>
 												</li>
-												
 											</ul>
 										</div>
 									</li>
 									<li>
 										<div className="h__customLogoTrade">
-											<NftIcon />
+											<GameIcon />
 										</div>
-										
-										<a href="https://metacivic.io/#/Games">Games</a>
-										
+
+										<a
+											style={{ color: '#b8bdb9' }}
+											href="https://metacivic.io/#/Games"
+										>
+											Games
+										</a>
 									</li>
 
 									<li>
 										{/* <img src="icon-menu.png" alt="" /> */}
-										<span>...</span>
+										<span>
+											<DotIcon />
+										</span>
 										<div className="submenu-nav">
 											<ul>
 												<li>
@@ -137,9 +148,17 @@ const MenuNew = () => {
 							{/* fagsjdha  */}
 						</div>
 						<div className="header-right gap">
+							<div className="btnMcv-cus">
+								<Button
+									primary
+									// click={onPresentWalletProviderModal}
+									text="Buy MCV"
+									className="h__btn"
+								/>
+							</div>
 							<div className="value-token ">
 								<img src="logo-mini.svg" alt="" />{' '}
-								<span className="h__FontNum">$1.07</span>
+								<span className="h__FontNum">$0.00</span>
 							</div>
 							<div className="connect-wallet">
 								{!account ? (

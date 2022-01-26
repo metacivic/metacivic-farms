@@ -62,10 +62,10 @@ const MenuNew = () => {
 										<div className="submenu-nav">
 											<ul>
 												<li>
-													<Link to="/swap">Exchange</Link>
+													<a href="https://metacivic.io/#/swap">Exchange</a>
 												</li>
 												<li>
-													<Link to="/pool">Add liquidity</Link>
+												<a href="https://metacivic.io/#/pool">Liquidity</a>
 												</li>
 											</ul>
 										</div>
@@ -78,10 +78,10 @@ const MenuNew = () => {
 										<div className="submenu-nav">
 											<ul>
 												<li>
-													<Link to="/Farms">Farm</Link>
+													<Link to="/">Start Pools</Link>
 												</li>
 												<li>
-													<Link to="/">Start Pools</Link>
+													<Link to="/Farms">Farm</Link>
 												</li>
 											</ul>
 										</div>
@@ -94,20 +94,24 @@ const MenuNew = () => {
 										<div className="submenu-nav">
 											<ul>
 												<li>
-													<Link to="/">Mint NFT</Link>
+													<a href="https://metacivic.io/#/mintNFT">Mint NFT</a>
 												</li>
 												<li>
-													<Link to="/">NFT Markets</Link>
+													<a href="https://metacivic.io/#/NFTmarket">NFT Markets</a>
 												</li>
-												<li>
-													<Link to="/">My Collections</Link>
-												</li>
-												<li>
-													<Link to="/">Stake NFT</Link>
-												</li>
+												
 											</ul>
 										</div>
 									</li>
+									<li>
+										<div className="h__customLogoTrade">
+											<NftIcon />
+										</div>
+										
+										<a href="https://metacivic.io/#/Games">Games</a>
+										
+									</li>
+
 									<li>
 										{/* <img src="icon-menu.png" alt="" /> */}
 										<span>...</span>

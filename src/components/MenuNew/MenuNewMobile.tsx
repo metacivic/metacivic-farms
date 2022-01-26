@@ -78,26 +78,36 @@ function MenuNewMobile() {
 	const menuTrade = (
 		<>
 			<ul>
-				<li>Exchange</li>
-				<li>Add liquidity</li>
+				<a href="https://metacivic.io/#/swap">
+					<li>Exchange</li>
+				</a>
+				<a href="https://metacivic.io/#/pool">
+					<li>Liquidity</li>
+				</a>
 			</ul>
 		</>
 	)
 	const menuEarn = (
 		<>
 			<ul>
-				<li>Farms</li>
-				<li>Start Pools</li>
+				<Link to="/">
+					<li>Start Pools</li>
+				</Link>
+				<Link to="/Farms">
+					<li>Farms</li>
+				</Link>
 			</ul>
 		</>
 	)
 	const menuNFT = (
 		<>
 			<ul>
-				<li>Mint NFT</li>
-				<li>Marketplace</li>
-				<li>My Collections</li>
-				<li>Stake NFT</li>
+				<a href="https://metacivic.io/#/mintNFT">
+					<li>Mint NFT</li>
+				</a>
+				<a href="https://metacivic.io/#/NFTmarket">
+					<li>NFT Markets</li>
+				</a>
 			</ul>
 		</>
 	)
@@ -130,7 +140,8 @@ function MenuNewMobile() {
 			<div className="footer-menu">
 				<div className="box-footer-menu">
 					<div className="value-token">
-						<img src="./images/lgmini.svg" alt="" style={{height: 40}} /> <span>$0.00</span>
+						<img src="./images/lgmini.svg" alt="" style={{ height: 40 }} />{' '}
+						<span>$0.00</span>
 					</div>
 
 					<div className="box-img socail-footer">
@@ -184,7 +195,7 @@ function MenuNewMobile() {
 								<StyleLine className={`${visible ? 'active' : ''}`} />
 							</IconMenu>
 							<div>
-							<img src="./images/lgmini.svg" alt="" style={{height: 40}} />
+								<img src="./images/lgmini.svg" alt="" style={{ height: 40 }} />
 							</div>
 						</button>
 						<Drawer

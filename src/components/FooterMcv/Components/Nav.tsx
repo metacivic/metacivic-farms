@@ -51,7 +51,7 @@ const Nav = () => {
 							</div>
 							<div className="text">
 								<p>MCV</p>
-								<span>$1.03</span>
+								<span>$0.00</span>
 							</div>
 						</div>
 						<div
@@ -67,23 +67,23 @@ const Nav = () => {
 						<ul>
 							<li>
 								<span>Max supply:</span>
-								<span>700 000 000</span>
+								<span>500,000,000</span>
 							</li>
 							<li>
 								<span>Total supply:</span>
-								<span>123 456 789</span>
+								<span>500,000,000</span>
 							</li>
 							<li>
 								<span>Circulating supply:</span>
-								<span>120 300 400</span>
+								<span>500,000,000</span>
 							</li>
 							<li>
 								<span>Total Burned:</span>
-								<span>7 012 389</span>
+								<span>0</span>
 							</li>
 							<li>
 								<span>Market Cap:</span>
-								<span>$50 134 980</span>
+								<span>$0</span>
 							</li>
 						</ul>
 					</div>

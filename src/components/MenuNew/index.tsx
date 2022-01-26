@@ -85,7 +85,7 @@ const MenuNew = () => {
 													<Link to="/">Start Pools</Link>
 												</li>
 												<li>
-													<Link to="/Farms">Farm</Link>
+													<Link to="/Farms">Farms</Link>
 												</li>
 											</ul>
 										</div>

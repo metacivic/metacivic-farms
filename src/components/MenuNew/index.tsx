@@ -5,7 +5,6 @@ import {
 	AppstoreOutlined,
 	SettingOutlined,
 } from '@ant-design/icons'
-import { isMobile } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 import Button from '../ButtonV2'
@@ -28,10 +27,8 @@ import 'antd/dist/antd.css'
 import './style.less'
 
 const MenuNew = () => {
+	const [width, setWidth] = useState<number>(window.innerWidth)
 
-	if (isMobile) {
-		return <MenuNewMobile />
-	}
 	const { account } = useWallet()
 	const customAccount = useMemo<string>(() => {
 		if (account) {
@@ -42,6 +39,23 @@ const MenuNew = () => {
 	}, [account])
 	const [onPresentWalletProviderModal] = useModal(<WalletProviderModal />)
 	const [onPresentAccountModal] = useModal(<AccountModal />)
+
+	function handleWindowSizeChange() {
+		setWidth(window.innerWidth)
+	}
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange)
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange)
+		}
+	}, [])
+
+	const isMobilez = width <= 769
+
+	if (isMobilez) {
+		return <MenuNewMobile />
+	}
+
 	return (
 		<>
 			<header>
@@ -51,8 +65,10 @@ const MenuNew = () => {
 							<div className="main-logo">
 								<Link to="/">
 									<div className="d-flex align-items-center h__Logo">
-										<img src="/logo-MCV-ffff.svg" alt="" />
-										{/* <h1 className="h__textLogo">METACIVIC</h1> */}
+										<img className='Mcv__iconBig' src="/logo-MCV-ffff.svg" alt="big" />
+										<img className='Mcv__iconMini' src="/images/lgmini.svg" alt="mini"  style={{ height: 40 }} />
+
+
 									</div>
 								</Link>
 							</div>

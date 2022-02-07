@@ -20,6 +20,8 @@ import { ReactComponent as TradeIcon } from '../../assets/h__img/Trade.svg'
 import { ReactComponent as EarnIcon } from '../../assets/h__img/Earn.svg'
 import { ReactComponent as NftIcon } from '../../assets/h__img/NFT.svg'
 import { ReactComponent as DotIcon } from '../../assets/h__img/3dot.svg'
+import { ReactComponent as WalletIcon } from '../../assets/h__img/Wallet.svg'
+import { ReactComponent as GameIcon } from '../../assets/h__img/Game.svg'
 
 function MenuNewMobile() {
 	const [visible, setVisible] = useState(false)
@@ -39,7 +41,7 @@ function MenuNewMobile() {
 		if (account) {
 			return `${account.substr(0, 4)}...${account.substr(account.length - 4)}`
 		} else {
-			return 'Connect'
+			return 'Connect Wallet'
 		}
 	}, [account])
 	const [onPresentWalletProviderModal] = useModal(<WalletProviderModal />)
@@ -68,6 +70,14 @@ function MenuNewMobile() {
 			</div>
 		</>
 	)
+
+	const Game = (
+		<div className="header-collapse">
+			<GameIcon />
+			<span>Games</span>
+		</div>
+	)
+
 	const docs = (
 		<>
 			<div className="header-collapse">
@@ -78,26 +88,50 @@ function MenuNewMobile() {
 	const menuTrade = (
 		<>
 			<ul>
-				<li>Exchange</li>
-				<li>Add liquidity</li>
+				<li>
+					<a href="https://metacivic.io/#/swap">Exchange</a>
+				</li>
+				<li>
+					<a href="https://metacivic.io/#/pool">Liquidity</a>
+				</li>
 			</ul>
 		</>
 	)
 	const menuEarn = (
 		<>
 			<ul>
-				<li>Farms</li>
-				<li>Start Pools</li>
+				<li>
+					<Link to="/Farms">Farm</Link>
+				</li>
+				<li>
+					<Link to="/">Start Pools</Link>
+				</li>
 			</ul>
 		</>
 	)
 	const menuNFT = (
 		<>
 			<ul>
-				<li>Mint NFT</li>
-				<li>Marketplace</li>
-				<li>My Collections</li>
-				<li>Stake NFT</li>
+				<li>
+					<a href="https://metacivic.io/#/mintNFT">Mint NFT</a>
+				</li>
+				<li>
+					<a href="https://metacivic.io/#/NFTmarket">NFT Markets</a>
+				</li>
+				{/* <li>My Collections</li>
+				<li>Stake NFT</li> */}
+			</ul>
+		</>
+	)
+
+	const menuGame = (
+		<>
+			<ul>
+				<li>
+					<a style={{ color: '#b8bdb9' }} href="https://metacivic.io/#/Games">
+						Game
+					</a>
+				</li>
 			</ul>
 		</>
 	)
@@ -123,14 +157,18 @@ function MenuNewMobile() {
 				<Panel header={nft} key="3">
 					<p>{menuNFT}</p>
 				</Panel>
-				<Panel header={docs} key="4">
+				<Panel header={Game} key="4">
+					<p>{menuGame}</p>
+				</Panel>
+				<Panel header={docs} key="5">
 					<p>{menuDocs}</p>
 				</Panel>
 			</Collapse>
 			<div className="footer-menu">
 				<div className="box-footer-menu">
 					<div className="value-token">
-						<img src="./images/lgmini.svg" alt="" style={{height: 40}} /> <span>$0.00</span>
+						<img src="./images/lgmini.svg" alt="" style={{ height: 40 }} />{' '}
+						<span>$0.00</span>
 					</div>
 
 					<div className="box-img socail-footer">
@@ -184,7 +222,11 @@ function MenuNewMobile() {
 								<StyleLine className={`${visible ? 'active' : ''}`} />
 							</IconMenu>
 							<div>
-							<img src="./images/lgmini.svg" alt="" style={{height: 40}} />
+								<img
+									src="./images/lgmini.svg"
+									alt=""
+									style={{ height: 40, marginLeft: 13 }}
+								/>
 							</div>
 						</button>
 						<Drawer
@@ -202,15 +244,13 @@ function MenuNewMobile() {
 					</div>
 				</div>
 				<div className="header-r-mobile">
-					<div className="setting">
-						<img src="setting-2.png" alt="" />
-					</div>
 					<div className="button-connect-mobile">
 						{!account ? (
 							<Button
 								primary
 								click={onPresentWalletProviderModal}
 								text={customAccount}
+								left={<WalletIcon />}
 							/>
 						) : (
 							<Button

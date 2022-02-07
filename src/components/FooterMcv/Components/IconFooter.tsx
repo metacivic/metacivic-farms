@@ -83,7 +83,9 @@ const IconFooter = () => {
 							</ul>
 							<p style={{ paddingTop: 30 }}>{item.sub}</p>
 							<button style={{ marginTop: 22 }}>
-								<a href="!#">{item.btn}</a>
+								<a className="mcv__ftBtn" href="!#">
+									{item.btn}
+								</a>
 							</button>
 						</>
 					)}
@@ -95,6 +97,9 @@ const IconFooter = () => {
 
 const Wrapper = styled.div`
 	width: 100%;
+	@media (max-width: 820px) {
+		margin-top: 30px;
+	}
 
 	li {
 		margin: 0 !important;
@@ -110,6 +115,10 @@ const Wrapper = styled.div`
 		align-items: center;
 		gap: ${isMobile ? '8px' : '16px'};
 		padding-top: 24px;
+
+		@media(max-width: 1025px) {
+			gap: 4px;
+		}
 
 		& > * {
 			height: 36px;
@@ -134,6 +143,12 @@ const Wrapper = styled.div`
 					color: blue !important;
 				}
 			}
+		}
+	}
+
+	.mcv__ftBtn {
+		@media (max-width: 1024px) {
+			font-size: 12px;
 		}
 	}
 `

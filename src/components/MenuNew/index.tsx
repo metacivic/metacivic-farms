@@ -29,6 +29,16 @@ import './style.less'
 const MenuNew = () => {
 	const [width, setWidth] = useState<number>(window.innerWidth)
 
+	function handleWindowSizeChange() {
+		setWidth(window.innerWidth)
+	}
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange)
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange)
+		}
+	}, [])
+
 	const { account } = useWallet()
 	const customAccount = useMemo<string>(() => {
 		if (account) {
@@ -39,16 +49,6 @@ const MenuNew = () => {
 	}, [account])
 	const [onPresentWalletProviderModal] = useModal(<WalletProviderModal />)
 	const [onPresentAccountModal] = useModal(<AccountModal />)
-
-	function handleWindowSizeChange() {
-		setWidth(window.innerWidth)
-	}
-	useEffect(() => {
-		window.addEventListener('resize', handleWindowSizeChange)
-		return () => {
-			window.removeEventListener('resize', handleWindowSizeChange)
-		}
-	}, [])
 
 	const isMobilez = width <= 769
 
@@ -65,10 +65,17 @@ const MenuNew = () => {
 							<div className="main-logo">
 								<Link to="/">
 									<div className="d-flex align-items-center h__Logo">
-										<img className='Mcv__iconBig' src="/logo-MCV-ffff.svg" alt="big" />
-										<img className='Mcv__iconMini' src="/images/lgmini.svg" alt="mini"  style={{ height: 40 }} />
-
-
+										<img
+											className="Mcv__iconBig"
+											src="/logo-MCV-ffff.svg"
+											alt="big"
+										/>
+										<img
+											className="Mcv__iconMini"
+											src="/images/lgmini.svg"
+											alt="mini"
+											style={{ height: 40 }}
+										/>
 									</div>
 								</Link>
 							</div>

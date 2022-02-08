@@ -63,10 +63,10 @@ const Nav = () => {
 				font-weight: 600;
 				font-size: 18px;
 
-        @media (max-width: 1025px) and (min-width: 850px) {
-          font-weight: 500;
-          font-size: 16px;
-        }
+				@media (max-width: 1025px) and (min-width: 850px) {
+					font-weight: 500;
+					font-size: 16px;
+				}
 			}
 		}
 	`
@@ -85,9 +85,9 @@ const Nav = () => {
 			border-radius: 4px;
 			gap: ${isMobilez ? '30px' : '50px'};
 
-      @media (max-width: 1024px) and (min-width: 850px)  {
-        gap: 30px;
-      }
+			@media (max-width: 1024px) and (min-width: 850px) {
+				gap: 30px;
+			}
 
 			& > * {
 				flex-grow: 1;

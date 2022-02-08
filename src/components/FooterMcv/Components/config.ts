@@ -1,4 +1,3 @@
-import Title from 'antd/lib/skeleton/Title'
 import { FooterItem } from './index.d'
 
 const config: FooterItem[] = [

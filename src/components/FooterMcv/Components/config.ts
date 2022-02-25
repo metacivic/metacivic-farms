@@ -7,19 +7,19 @@ const config: FooterItem[] = [
     items: [
       {
         title: 'Docs',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/',
+        href: '#',
       },
       {
         title: 'Team',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/team/our-team',
+        href: '#',
       },
       {
         title: 'Roadmap',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/roadmap',
+        href: '#',
       },
       {
         title: 'Github',
-        href: 'https://github.com/artinfinityofficial',
+        href: '#',
       },
     ],
   },
@@ -37,11 +37,11 @@ const config: FooterItem[] = [
       },
       {
         title: 'Start Pools',
-        href: 'https://stake.artinfinity.app/#/',
+        href: 'https://farms.metacivic.io/#/',
       },
       {
         title: 'Farms',
-        href: 'https://stake.artinfinity.app/#/Farms',
+        href: 'https://farms.metacivic.io/#/Farms',
       },
       {
         title: 'NFT',
@@ -55,11 +55,11 @@ const config: FooterItem[] = [
     items: [
       {
         title: 'GameFi',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/core-products/gamefi',
+        href: '#',
       },
       {
         title: 'Metaverse',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/core-products/gamefi/phase-3-metaverse',
+        href: '#',
       },
     ],
   },

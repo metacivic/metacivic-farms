@@ -50,7 +50,9 @@ function MenuNewMobile() {
 		<>
 			<div className="header-collapse">
 				<TradeIcon />
-				<span>Trade</span>
+				<Link className="h__customColor" to="/">
+					Start Pools
+				</Link>
 			</div>
 		</>
 	)
@@ -58,23 +60,29 @@ function MenuNewMobile() {
 		<>
 			<div className="header-collapse">
 				<EarnIcon />
-				<span>Earns</span>
+				<Link className="h__customColor" to="/Farms">
+					Farms
+				</Link>
 			</div>
 		</>
 	)
 	const nft = (
 		<>
-			<div className="header-collapse">
+			<div className="header-collapse comingsoon">
 				<NftIcon />
-				<span>NFT</span>
+				<Link className="h__customColor" to="!#">
+					NFT Markets
+				</Link>
 			</div>
 		</>
 	)
 
 	const Game = (
-		<div className="header-collapse">
+		<div className="header-collapse comingsoon">
 			<GameIcon />
-			<span>Games</span>
+			<Link className="h__customColor" to="!#">
+				Game
+			</Link>
 		</div>
 	)
 
@@ -148,18 +156,10 @@ function MenuNewMobile() {
 	const contentMenuMoblie = (
 		<>
 			<Collapse defaultActiveKey={['1']} onChange={callback}>
-				<Panel header={trade} key="1">
-					<p>{menuTrade}</p>
-				</Panel>
-				<Panel header={earns} key="2">
-					<p>{menuEarn}</p>
-				</Panel>
-				<Panel header={nft} key="3">
-					<p>{menuNFT}</p>
-				</Panel>
-				<Panel header={Game} key="4">
-					<p>{menuGame}</p>
-				</Panel>
+				<Panel header={trade} key="0" showArrow={false} />
+				<Panel header={earns} key="2" showArrow={false} />
+				<Panel header={nft} key="3" showArrow={false} />
+				<Panel header={Game} key="4" showArrow={false} />
 				<Panel header={docs} key="5">
 					<p>{menuDocs}</p>
 				</Panel>

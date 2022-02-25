@@ -85,8 +85,8 @@ const MenuNew = () => {
 										<div className="h__customLogoTrade">
 											<TradeIcon />
 										</div>
-										Trade
-										<div className="submenu-nav">
+										Start Pools
+										{/* <div className="submenu-nav">
 											<ul>
 												<li>
 													<a href="https://metacivic.io/#/swap">Exchange</a>
@@ -95,14 +95,14 @@ const MenuNew = () => {
 													<a href="https://metacivic.io/#/pool">Liquidity</a>
 												</li>
 											</ul>
-										</div>
+										</div> */}
 									</li>
 									<li>
 										<div className="h__customLogoTrade">
 											<EarnIcon />
 										</div>
-										Earns
-										<div className="submenu-nav">
+										Farms
+										{/* <div className="submenu-nav">
 											<ul>
 												<li>
 													<Link to="/">Start Pools</Link>
@@ -111,28 +111,24 @@ const MenuNew = () => {
 													<Link to="/Farms">Farm</Link>
 												</li>
 											</ul>
-										</div>
+										</div> */}
 									</li>
 									<li>
-										<div className="h__customLogoTrade">
+										<div className="h__customLogoTrade comingsoon">
 											<NftIcon />
 										</div>
-										NFT
-										<div className="submenu-nav">
+										NFT Markets
+										{/* <div className="submenu-nav ">
 											<ul>
 												<li>
 													<a href="https://metacivic.io/#/mintNFT">Mint NFT</a>
 												</li>
-												<li>
-													<a href="https://metacivic.io/#/NFTmarket">
-														NFT Markets
-													</a>
-												</li>
+												
 											</ul>
-										</div>
+										</div> */}
 									</li>
 									<li>
-										<div className="h__customLogoTrade">
+										<div className="h__customLogoTrade comingsoon">
 											<GameIcon />
 										</div>
 
@@ -140,7 +136,7 @@ const MenuNew = () => {
 											style={{ color: '#b8bdb9' }}
 											href="https://metacivic.io/#/Games"
 										>
-											Games
+											Game
 										</a>
 									</li>
 

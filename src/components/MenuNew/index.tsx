@@ -28,7 +28,6 @@ import 'antd/dist/antd.css'
 import './style.less'
 
 const MenuNew = () => {
-
 	if (isMobile) {
 		return <MenuNewMobile />
 	}
@@ -49,12 +48,11 @@ const MenuNew = () => {
 					<div className="all mcv_cus">
 						<div className="header-left">
 							<div className="main-logo">
-								<Link to="/">
+								<a href="https://metacivic.io/">
 									<div className="d-flex align-items-center h__Logo">
 										<img src="/logo-MCV-ffff.svg" alt="" />
-										{/* <h1 className="h__textLogo">METACIVIC</h1> */}
 									</div>
-								</Link>
+								</a>
 							</div>
 							<div className="main-menu">
 								<ul className="list-menu h__customListMenu">

@@ -5,7 +5,6 @@ import {
 	AppstoreOutlined,
 	SettingOutlined,
 } from '@ant-design/icons'
-import { isMobile } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 import Button from '../ButtonV2'
@@ -28,10 +27,18 @@ import 'antd/dist/antd.css'
 import './style.less'
 
 const MenuNew = () => {
+	const [width, setWidth] = useState<number>(window.innerWidth)
 
-	if (isMobile) {
-		return <MenuNewMobile />
+	function handleWindowSizeChange() {
+		setWidth(window.innerWidth)
 	}
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange)
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange)
+		}
+	}, [])
+
 	const { account } = useWallet()
 	const customAccount = useMemo<string>(() => {
 		if (account) {
@@ -42,6 +49,13 @@ const MenuNew = () => {
 	}, [account])
 	const [onPresentWalletProviderModal] = useModal(<WalletProviderModal />)
 	const [onPresentAccountModal] = useModal(<AccountModal />)
+
+	const isMobilez = width <= 769
+
+	if (isMobilez) {
+		return <MenuNewMobile />
+	}
+
 	return (
 		<>
 			<header>
@@ -49,16 +63,25 @@ const MenuNew = () => {
 					<div className="all mcv_cus">
 						<div className="header-left">
 							<div className="main-logo">
-								<Link to="/">
+								<a href="https://metacivic.io/">
 									<div className="d-flex align-items-center h__Logo">
-										<img src="/logo-MCV-ffff.svg" alt="" />
-										{/* <h1 className="h__textLogo">METACIVIC</h1> */}
+										<img
+											className="Mcv__iconBig"
+											src="/logo-MCV-ffff.svg"
+											alt="big"
+										/>
+										<img
+											className="Mcv__iconMini"
+											src="/images/lgmini.svg"
+											alt="mini"
+											style={{ height: 40 }}
+										/>
 									</div>
-								</Link>
+								</a>
 							</div>
 							<div className="main-menu">
 								<ul className="list-menu h__customListMenu">
-									<li>
+									{/* <li>
 										<div className="h__customLogoTrade">
 											<TradeIcon />
 										</div>
@@ -73,8 +96,28 @@ const MenuNew = () => {
 												</li>
 											</ul>
 										</div>
-									</li>
+									</li> */}
 									<li>
+										<div className="h__customLogoTrade">
+											<TradeIcon />
+										</div>
+
+										<Link style={{ color: '#b8bdb9' }} to="/">
+											Start Pools
+										</Link>
+									</li>
+
+									<li>
+										<div className="h__customLogoTrade">
+											<EarnIcon />
+										</div>
+
+										<Link style={{ color: '#b8bdb9' }} to="/Farms">
+											Farms
+										</Link>
+									</li>
+
+									{/* <li>
 										<div className="h__customLogoTrade">
 											<EarnIcon />
 										</div>
@@ -89,8 +132,21 @@ const MenuNew = () => {
 												</li>
 											</ul>
 										</div>
+									</li> */}
+									<li className="comingsoon">
+										<div className="h__customLogoTrade">
+											<NftIcon />
+										</div>
+
+										<a
+											style={{ color: '#b8bdb9' }}
+											href="/"
+										>
+											NFT Markets
+										</a>
 									</li>
-									<li>
+
+									{/* <li>
 										<div className="h__customLogoTrade">
 											<NftIcon />
 										</div>
@@ -107,15 +163,15 @@ const MenuNew = () => {
 												</li>
 											</ul>
 										</div>
-									</li>
-									<li>
-										<div className="h__customLogoTrade">
+									</li> */}
+									<li  className="comingsoon">
+										<div className="h__customLogoTrade comingsoon">
 											<GameIcon />
 										</div>
 
 										<a
 											style={{ color: '#b8bdb9' }}
-											href="https://metacivic.io/#/Games"
+											href="/"
 										>
 											Games
 										</a>

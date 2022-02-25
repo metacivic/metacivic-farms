@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { isMobile } from 'react-device-detect'
 
 import styled from 'styled-components'
 
@@ -31,11 +30,83 @@ const IconArr = [
 ]
 
 const IconFooter = () => {
+	const [width, setWidth] = useState<number>(window.innerWidth)
+
+	function handleWindowSizeChange() {
+		setWidth(window.innerWidth)
+	}
+	useEffect(() => {
+		window.addEventListener('resize', handleWindowSizeChange)
+		return () => {
+			window.removeEventListener('resize', handleWindowSizeChange)
+		}
+	}, [])
+
+	const isMobilez = width <= 850
+
+	const Wrapper = styled.div`
+		width: 100%;
+		@media (max-width: 820px) {
+			margin-top: 30px;
+		}
+
+		li {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		.h__box {
+			align-items: center;
+			gap: ${isMobilez ? '8px' : '16px'};
+			padding-top: 24px;
+
+			@media (max-width: 1025px) {
+				gap: 4px;
+			}
+
+			& > * {
+				height: 36px;
+				width: 36px;
+				border-radius: 100px;
+				background-color: #ffffff;
+
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				padding-right: 1px;
+
+				&:hover a {
+					color: blue !important;
+				}
+
+				a {
+					color: #000;
+					font-size: 18px;
+
+					&:hover {
+						color: blue !important;
+					}
+				}
+			}
+		}
+
+		.mcv__ftBtn {
+			@media (max-width: 1024px) {
+				font-size: 12px;
+			}
+		}
+	`
+
 	return (
 		<Wrapper>
 			{IconArr.map((item, i) => (
 				<div key={i}>
-					{isMobile ? (
+					{isMobilez ? (
 						<CustomMobile>
 							<div className="h__flex">
 								<p style={{ fontSize: 16, fontWeight: 600 }}>{item.title}</p>
@@ -83,7 +154,9 @@ const IconFooter = () => {
 							</ul>
 							<p style={{ paddingTop: 30 }}>{item.sub}</p>
 							<button style={{ marginTop: 22 }}>
-								<a href="!#">{item.btn}</a>
+								<a className="mcv__ftBtn" href="!#">
+									{item.btn}
+								</a>
 							</button>
 						</>
 					)}
@@ -92,51 +165,6 @@ const IconFooter = () => {
 		</Wrapper>
 	)
 }
-
-const Wrapper = styled.div`
-	width: 100%;
-
-	li {
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-	p {
-		margin: 0;
-		padding: 0;
-	}
-
-	.h__box {
-		align-items: center;
-		gap: ${isMobile ? '8px' : '16px'};
-		padding-top: 24px;
-
-		& > * {
-			height: 36px;
-			width: 36px;
-			border-radius: 100px;
-			background-color: #ffffff;
-
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			padding-right: 1px;
-
-			&:hover a {
-				color: blue !important;
-			}
-
-			a {
-				color: #000;
-				font-size: 18px;
-
-				&:hover {
-					color: blue !important;
-				}
-			}
-		}
-	}
-`
 
 const CustomMobile = styled.div`
 	width: 100%;

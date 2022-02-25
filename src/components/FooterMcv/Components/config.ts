@@ -1,4 +1,3 @@
-import Title from 'antd/lib/skeleton/Title'
 import { FooterItem } from './index.d'
 
 const config: FooterItem[] = [
@@ -8,45 +7,35 @@ const config: FooterItem[] = [
     items: [
       {
         title: 'Docs',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/',
+        href: '/',
       },
       {
         title: 'Team',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/team/our-team',
+        href: '/',
       },
       {
         title: 'Roadmap',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/roadmap',
+        href: '/',
       },
-      {
-        title: 'Github',
-        href: 'https://github.com/artinfinityofficial',
-      },
+      
     ],
   },
   {
     id: '2',
     title: 'Product',
     items: [
-      {
-        title: 'Exchange',
-        href: '/swap',
-      },
-      {
-        title: 'Add liquidity',
-        href: '/pool',
-      },
+      
       {
         title: 'Start Pools',
-        href: 'https://stake.artinfinity.app/#/',
+        href: '/',
       },
       {
         title: 'Farms',
-        href: 'https://stake.artinfinity.app/#/Farms',
+        href: '/Farms',
       },
       {
-        title: 'NFT',
-        href: '/NFTmarket',
+        title: 'NFT Markets',
+        href: '/',
       },
     ],
   },
@@ -56,11 +45,11 @@ const config: FooterItem[] = [
     items: [
       {
         title: 'GameFi',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/core-products/gamefi',
+        href: '/',
       },
       {
         title: 'Metaverse',
-        href: 'https://docs.artinfinity.app/welcome-to-artinfinity/core-products/gamefi/phase-3-metaverse',
+        href: '/',
       },
     ],
   },

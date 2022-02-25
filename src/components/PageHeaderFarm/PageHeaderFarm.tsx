@@ -41,6 +41,7 @@ const PageHeaderFarm: React.FC<PageHeaderProps> = ({
 }
 
 const StyledPageHeader = styled.div`
+    height: 350px;
 	padding-left: 20px;
 	justify-content: center;
 	align-items: flex-start;

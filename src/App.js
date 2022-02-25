@@ -29,7 +29,7 @@ const App = () => {
 			<StyledContainer>
 				<div className="bsc-farm">
 					<div className="bsc-farm-header">
-						<MenuNew />
+						<MenuNew /> 
 					</div>
 					<div className="bsc-farm-content">
 						<div className="bsc-farm-content-page">

@@ -321,7 +321,7 @@ header {
 }
 .customBtnHd {
   font-size: 14px !important;
-  width: max-content;
+  // width: max-content;
 }
 
 .h__customLogoTrade {
@@ -397,25 +397,25 @@ a {
   }
 }
 
-@media screen and(max-width:1025px) {
-  .h__customListMenu {
-    padding-left: 22px;
+// @media screen and(max-width:1025px) {
+//   .h__customListMenu {
+//     padding-left: 22px;
 
-    li {
-      margin-right: 15px !important;
-    }
-  }
+//     li {
+//       margin-right: 15px !important;
+//     }
+//   }
 
-  .main-header .all {
-    .header-left {
-      flex: 1;
+//   .main-header .all {
+//     .header-left {
+//       flex: 1;
 
-      .main-menu {
-        flex: 1;
-      }
-    }
-  }
-}
+//       .main-menu {
+//         flex: 1;
+//       }
+//     }
+//   }
+// }
 
 .ant-collapse {
   background-color: #151515;
@@ -468,4 +468,70 @@ a {
   > .ant-collapse-item.ant-collapse-item-active
   > .ant-collapse-header {
   background: #272c35;
+}
+
+.Mcv__iconMini {
+  display: none;
+}
+
+@media screen and(max-width: 1050px) {
+  .Mcv__iconMini {
+    display: block;
+  }
+
+  .Mcv__iconBig {
+    display: none;
+  }
+
+  .h__customListMenu {
+    padding-left: 0px;
+  }
+
+  .h__btn {
+    display: none;
+  }
+
+  .main-header .header-right .value-token span {
+    font-size: 12px;
+  }
+
+  .btn-bsc-common button span {
+    font-size: 12px;
+  }
+
+  .gap {
+    gap: 0;
+  }
+}
+
+@media screen and(max-width: 769px) {
+  .btn-bsc-common button span {
+    font-size: 12px;
+  }
+
+  .main-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.drawer-menu {
+  a {
+    color: inherit !important;
+  }
+}
+.comingsoon a:last-child::after{
+  position: absolute;
+  content: 'soon';
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  background-color: #f5de05;
+  border-radius: 3px;
+  text-align: center;
+  right: 14px;
+  top: -8px;
+  font-size: 12px;
+  color: #121517;
+  cursor: pointer;
 }

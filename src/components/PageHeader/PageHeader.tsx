@@ -30,12 +30,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
 						<StyledSubtitle>
 							<span className="desc-header">{subtitle1}</span>
 						</StyledSubtitle>
-						<button type="button" className="btn-more-details">
-							More details
-						</button>
-						{/* <div className="box-img">
-							<img src="../images/Illustration.png" alt="" />
-						</div> */}
+						
 					</div>
 				</div>
 			</StyledPageHeader>

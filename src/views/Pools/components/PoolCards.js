@@ -197,7 +197,7 @@ const PoolCards = () => {
 							</Tab>
 						</Tabs>
 					</Tab>
-					<Tab className="bsc-nav-tabs" eventKey="Active" title="Active">
+					<Tab className="bsc-nav-tabs" eventKey="Active" title="Finished">
 						<>
 							<Tabs
 								defaultActiveKey="list"

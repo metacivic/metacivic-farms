@@ -207,6 +207,9 @@ const MenuNew = () => {
 							<div className="btnMcv-cus">
 								<Button
 									primary
+									click={() => {
+										window.open(`https://pancakeswap.finance/swap`, '_blank')
+									}}
 									// click={onPresentWalletProviderModal}
 									text="Buy MCV"
 									className="h__btn"

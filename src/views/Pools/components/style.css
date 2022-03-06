@@ -1140,7 +1140,7 @@ img.logo-big.lp {
 }
 .main-arte-custom .nav-tabs > .nav-item {
   border-radius: 25px !important;
-  background: #272c35 !important;
+  /* background: #272c35 !important; */
   color: #808982 !important;
 }
 .main-arte-custom .box-list-grid.nav-tabs > .nav-item {

@@ -142,11 +142,7 @@ const FooterNew = () => {
 												<li>
 													<h3 className="title mar-b-15">Support 24/7</h3>
 												</li>
-												<li>
-													<button type="button" className="btn-contact">
-														Contact us
-													</button>
-												</li>
+												
 											</ul>
 										</div>
 									</div>
@@ -169,7 +165,9 @@ const FooterNew = () => {
 											<img src="/icon-meta.png" alt="" />
 										</div>
 										<div className="text">
-											<button type="button" className="btn-bought">
+											<button type="button" onClick={() => {
+									window.open(`https://pancakeswap.finance/swap`, '_blank')
+								}} className="btn-bought">
 												Buy MCV
 											</button>
 										</div>

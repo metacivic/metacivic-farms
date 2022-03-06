@@ -30,9 +30,7 @@ const PageHeaderFarm: React.FC<PageHeaderProps> = ({
 						<StyledSubtitle>
 							<span className="desc-header">{subtitle1}</span>
 						</StyledSubtitle>
-						<button type="button" className="btn-more-details">
-							More details
-						</button>
+						
 					</div>
 				</div>
 			</StyledPageHeader>

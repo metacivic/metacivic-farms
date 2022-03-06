@@ -203,7 +203,14 @@ const Nav = () => {
 						>
 							<img src="/icon-meta.png" alt="" />
 
-							<button>Buy MCV</button>
+							<button
+								onClick={() => {
+									window.open(`https://pancakeswap.finance/swap`, '_blank')
+								}}
+								type="button"
+							>
+								Buy MCV
+							</button>
 						</div>
 					</div>
 					<div className="right">

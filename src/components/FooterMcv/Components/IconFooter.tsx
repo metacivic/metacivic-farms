@@ -129,9 +129,9 @@ const IconFooter = () => {
 										</li>
 									))}
 								</ul>
-								<button style={{ marginTop: 22 }}>
+								{/* <button style={{ marginTop: 22 }}>
 									<a href="!#">{item.btn}</a>
-								</button>
+								</button> */}
 							</div>
 						</CustomMobile>
 					) : (
@@ -153,11 +153,11 @@ const IconFooter = () => {
 								))}
 							</ul>
 							<p style={{ paddingTop: 30 }}>{item.sub}</p>
-							<button style={{ marginTop: 22 }}>
+							{/* <button style={{ marginTop: 22 }}>
 								<a className="mcv__ftBtn" href="!#">
 									{item.btn}
 								</a>
-							</button>
+							</button> */}
 						</>
 					)}
 				</div>

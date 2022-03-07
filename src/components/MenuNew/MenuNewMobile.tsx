@@ -139,9 +139,7 @@ function MenuNewMobile() {
 		<>
 			<ul>
 				<li>Docs</li>
-				<li>Blogs</li>
 				<li>Github</li>
-				<li>Certick Audit</li>
 			</ul>
 		</>
 	)

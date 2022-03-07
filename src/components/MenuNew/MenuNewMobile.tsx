@@ -118,8 +118,6 @@ function MenuNewMobile() {
 				<li>
 					<a href="https://metacivic.io/#/NFTmarket">NFT Markets</a>
 				</li>
-				{/* <li>My Collections</li>
-				<li>Stake NFT</li> */}
 			</ul>
 		</>
 	)

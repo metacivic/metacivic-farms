@@ -188,13 +188,7 @@ const MenuNew = () => {
 													<Link to="/">Docs</Link>
 												</li>
 												<li>
-													<Link to="/">Blogs</Link>
-												</li>
-												<li>
 													<Link to="/">Github</Link>
-												</li>
-												<li>
-													<Link to="/">Certick Audit</Link>
 												</li>
 											</ul>
 										</div>

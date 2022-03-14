@@ -14,8 +14,14 @@ const FooterNew = () => {
 										<div className="content-guide">
 											<h3 className="title">About</h3>
 											<ul className="list-menu-ft">
-												<li>
-													<a href="#!">Docs</a>
+											<li>
+													<a
+														href="https://docs.metacivic.io/wiki"
+														rel="noreferrer"
+														target="_blank"
+													>
+														Docs
+													</a>
 												</li>
 												<li>
 													<a href="#!">Team</a>
@@ -24,8 +30,10 @@ const FooterNew = () => {
 													<a href="#!">Roadmap</a>
 												</li>
 												<li>
-													<a href="#!">Github</a>
-												</li>
+                          <a href="https://github.com/metacivic" rel="noreferrer" target="_blank">
+                            Github
+                          </a>
+                        </li>
 											</ul>
 										</div>
 									</div>

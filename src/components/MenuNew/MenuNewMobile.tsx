@@ -136,8 +136,16 @@ function MenuNewMobile() {
 	const menuDocs = (
 		<>
 			<ul>
-				<li>Docs</li>
-				<li>Github</li>
+			<li>
+                          <a href="https://docs.metacivic.io/wiki" rel="noreferrer" target="_blank">
+                            Docs
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/metacivic" rel="noreferrer" target="_blank">
+                            Github
+                          </a>
+                        </li>
 			</ul>
 		</>
 	)

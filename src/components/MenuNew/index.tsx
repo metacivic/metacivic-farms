@@ -138,10 +138,7 @@ const MenuNew = () => {
 											<NftIcon />
 										</div>
 
-										<a
-											style={{ color: '#b8bdb9' }}
-											href="/"
-										>
+										<a style={{ color: '#b8bdb9' }} href="/">
 											NFT Markets
 										</a>
 									</li>
@@ -164,15 +161,12 @@ const MenuNew = () => {
 											</ul>
 										</div>
 									</li> */}
-									<li  className="comingsoon">
+									<li className="comingsoon">
 										<div className="h__customLogoTrade comingsoon">
 											<GameIcon />
 										</div>
 
-										<a
-											style={{ color: '#b8bdb9' }}
-											href="/"
-										>
+										<a style={{ color: '#b8bdb9' }} href="/">
 											Games
 										</a>
 									</li>
@@ -185,10 +179,22 @@ const MenuNew = () => {
 										<div className="submenu-nav">
 											<ul>
 												<li>
-													<Link to="/">Docs</Link>
+													<a
+														href="https://docs.metacivic.io/wiki"
+														rel="noreferrer"
+														target="_blank"
+													>
+														Docs
+													</a>
 												</li>
 												<li>
-													<Link to="/">Github</Link>
+													<a
+														href="https://github.com/metacivic"
+														rel="noreferrer"
+														target="_blank"
+													>
+														Github
+													</a>
 												</li>
 											</ul>
 										</div>

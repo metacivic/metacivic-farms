@@ -7,7 +7,7 @@ const config: FooterItem[] = [
     items: [
       {
         title: 'Docs',
-        href: '/',
+        href: 'https://docs.metacivic.io/wiki',
       },
       {
         title: 'Team',

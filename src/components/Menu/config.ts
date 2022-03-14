@@ -85,7 +85,7 @@ const config: TMenuItem[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com',
+        href: 'https://github.com/metacivic',
       },
       {
         label: 'Docs',
